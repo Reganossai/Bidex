@@ -1,102 +1,150 @@
-import React, { useCallback } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { useState } from "react";
-import image from "../assets/images.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faXmark,
+  faBars,
+  faMagnifyingGlass,
+  faBell,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faChartSimple,
+  faGraduationCap,
+  faUserPen,
+} from "@fortawesome/free-solid-svg-icons";
+import { useCallback } from "react";
+import { useHistory } from "react-router-dom";
+import bidex from "../assets/Bidex.png";
+import bell from "../assets/bell.png";
 
-
-const Navbar = ({handleLogout}) => {
+const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const history = useHistory();
+
   const handleNav = () => {
     setNav(!nav);
   };
 
-  
-
-  const Logout = useCallback(() => {
-    handleLogout()
-  },[handleLogout])
+  // const handleLogout = useCallback(() => {
+  //   saveToken("");
+  //   history.push("/login");
+  // }, [saveToken, history]);
 
   nav
-    ? (document.body.style.overflow = "hidden")
+    ? (document.body.style.overflowX = "hidden")
     : (document.body.style.overflow = "auto");
-
   return (
-  <div>
-     <nav className="navbar navbar-expand-lg">
-      <div className="logo-div">
-        <Link to="/">
-          <img src={image} className="logoo" alt="logoo" />
+    <div className="nav-usa">
+      <nav className="navbar navbar-expand-lg">
+        <Link to="#">
+          <img src={bidex} className="logoo" alt="logoo" />
         </Link>
-      </div>
-      <div id="navbarSupportedContent">
-        <ul>
 
-          <li className="nav-link">
-            <NavLink exact activeClassName="active" to="/">
-              Home
-            </NavLink>
-          </li>
-          <li className="nav-link">
-            <NavLink activeClassName="active" to="/arrivals">
-              Arrivals
-            </NavLink>
-          </li>
-
-          <li className="nav-link">
-            <NavLink activeClassName="active" to="/departures">
-              Departures
-            </NavLink>
-          </li>
-
-          <li className="nav-link">
-            <button className="btn btn-info" onClick={Logout}>
-              logout
-            </button>
-          </li>
-        </ul>
-      </div>
-      {nav ? (
-        <div id="navbarSupportedContentMobile">
+        <div id="navbarSupportedContent">
           <ul>
-          <li className="nav-link">
-            <Link exact ClassName="activee" to="/">
-              Home
-            </Link>
-          </li>
-          <li className="nav-link">
-            <Link ClassName="activee" to="/arrivals">
-              Arrivals
-            </Link>
-          </li>
+            <li className="nav-link">
+              <input type="search" className="search" placeholder="search" />
+            </li>
+            <li>
+              <button>
+                <FontAwesomeIcon
+                  icon={faMagnifyingGlass}
+                  className="font-awesome-one"
+                />
+              </button>
+            </li>
 
-          <li className="nav-link">
-            <Link ClassName="activee" to="/departures">
-              Departures
-            </Link>
-          </li>
+            <li>
+              <h1>
+                <img src={bell} className="bell" />
+              </h1>
+            </li>
 
-          <li className="nav-link">
-            <button className="btn btn-info" onClick={Logout}>
-              logout
-            </button>
-          </li>
+            <li>
+              <div className="hello">
+                <h1>Hello, Johnson</h1>
+                <p>Start trading now</p>
+              </div>
+            </li>
 
+            <li>
+              <h6>jkl</h6>
+            </li>
+
+            {/* <li>
+              <button
+                id="logout-bt-desktop"
+                className="btn btn-primary"
+                onClick={handleLogout}
+              >
+                Log out
+              </button>
+            </li> */}
+
+            <div onClick={handleNav} className="zaracho">
+              {nav ? (
+                <FontAwesomeIcon icon={faXmark} />
+              ) : (
+                <FontAwesomeIcon icon={faBars} />
+              )}
+            </div>
           </ul>
-        </div>
-      ) : null}
 
-      <div onClick={handleNav} className="zaracho">
-        {nav ? (
-          <FontAwesomeIcon icon={faXmark} />
-        ) : (
-          <FontAwesomeIcon icon={faBars} />
-        )}
-      </div>
-    </nav>
-  </div>
+          {nav ? (
+            <div id="navbarSupportedContentMobile">
+              <ul>
+                <li id="dash">
+                  <NavLink activeClassName="active" to="/dashboard">
+                    <span>
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faChartSimple}
+                        className="fontawesome-sidebar"
+                      />
+                    </span>{" "}
+                    Dashboard
+                  </NavLink>
+                </li>
+                <hr className="hop" />
+                <li id="adm">
+                  <NavLink activeClassName="active" to="#">
+                    <span>
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faGraduationCap}
+                        className="fontawesome-sidebar"
+                      />
+                    </span>{" "}
+                    Admission
+                  </NavLink>
+                </li>
+
+                <hr className="hop" />
+                <li id="prof">
+                  <NavLink activeClassName="active" to="#">
+                    <span>
+                      {" "}
+                      <FontAwesomeIcon
+                        icon={faUserPen}
+                        className="fontawesome-sidebar"
+                      />
+                    </span>{" "}
+                    Profile
+                  </NavLink>
+                </li>
+
+                <hr className="hop" />
+                {/* <li>
+                  <button onClick={handleLogout} className="btn btn-danger">
+                    Logout
+                  </button>
+                </li> */}
+              </ul>
+            </div>
+          ) : null}
+        </div>
+      </nav>
+    </div>
   );
 };
 

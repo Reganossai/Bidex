@@ -1,144 +1,105 @@
 import React, { useCallback, useState } from "react";
-import { saveUserOnRegister } from "../database";
 import { Link } from "react-router-dom";
+import google from "../assets/google.png";
+import back from "../assets/image 1.png";
 
 const Register = () => {
   const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
-  const [address, setAddress] = useState("");
-  const [city, setCity] = useState("");
-  const [state, setState] = useState("");
-  const [success, setSuccess] = useState(false);
 
-  const handleRegister = useCallback(() => {
-    const res = saveUserOnRegister({
-      firstname,
-      lastname,
-      email,
-      password,
-      address,
-      city,
-      state,
-    });
-
-    if (res === true) {
-      setSuccess(true);
-    } else {
-      alert(res);
-    }
-  }, [firstname, lastname, email, password, address, city, state]);
+  const handleRegister = (e) => {
+    e.preventDefault();
+  
+  };
 
   return (
     <div className="register-div">
-      <div class="bg"></div>
-      <div className="bgg">
-      <h1>Sign Up</h1>
-      {success ? (
-        <>
-          <h1 className="kug">Successful</h1>
-          <div className="kuga">
-          <Link to="/login">click here to login</Link>
-          </div>
-        </>
-      ) : (
-        <form>
-          <div class="form-group">
-            <label for="inputFirstname">First name</label>
-            <input
-              type="text"
-              onChange={(e) => setFirstname(e.target.value)}
-              class="form-control"
-              placeholder="First name"
-              name="firstname"
-            />
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputLastname">Lastname</label>
-            <input
-              type="text"
-              onChange={(e) => setLastname(e.target.value)}
-              class="form-control"
-              placeholder="Last name"
-              name="lastname"
-            />
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail">Email</label>
-              <input
-                type="email"
-                name="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                class="form-control"
-                id="inputEmail"
-                placeholder="Email"
-              />
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword">Password</label>
-              <input
-                type="password"
-                name="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                class="form-control"
-                id="inputPassword4"
-                placeholder="Password"
-              />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input
-              type="text"
-              onChange={(e) => setAddress(e.target.value)}
-              class="form-control"
-              id="inputAddress"
-              placeholder="Enter home address"
-              name="address"
-            />
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input
-                type="text"
-                onChange={(e) => setCity(e.target.value)}
-                class="form-control"
-                id="inputCity"
-                name="city"
-              />
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputState">State</label>
-              <input
-                type="text"
-                onChange={(e) => setState(e.target.value)}
-                id="inputState"
-                class="form-control"
-                name="state"
-              />
-            </div>
-          </div>
-          <button
-            onClick={handleRegister}
-            type="submit"
-            id="sub-btn"
-            class="btn btn-primary"
-          >
-            Register
-          </button><br/>
-          <div className="kupa">
-          <Link to="/login">Already have an account? sign in</Link>
-          </div>
-        </form>
+      
+    <img src={back} className="imak" alt="imak"/>
+  <div className="form-divv">
+ 
+      <form>
+      <div className="form-group">
+          <label for="firstname">First name</label>
+          <input
+            type="email"
+            name="email"
+            value={email}
+
+            className="form-control"
+            placeholder="Enter your first name"
+          />
+        </div>
+
+        <div className="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            name="email"
+            value={email}
+
+            className="form-control"
+            placeholder="Enter your email"
+          />
+        </div>
+
         
-      )}
+        <div className="form-groupp">
+          <label for="email">Phone number</label>
+          <div className="form-groupp-sub">
+          <span><div className="chee">+234</div></span>
+          <input
+            type="email"
+            name="email"
+            value={email}
+
+            className="form-control"
+            placeholder="Enter your email"
+          />
+          </div>
+        </div>
+
+
+        <div className="form-group">
+          <label for="inputPassword">Password</label>
+          <input
+            type="password"
+            className="form-control"
+            name="password"
+            value={password}
+            placeholder="Enter your password"
+          />         
+        </div>
+        <div className="terms"> <Link to="#">By signing up, you accept our <span className="blue">Terms of service</span> and <span className="blue">Privacy policy</span></Link></div>
+        <button
+          onClick={handleRegister}
+          type="submit"
+          id="log-btn"
+          className="btn btn-primary"
+        >
+          Register
+        </button>
+        <br />
+
+        <div className="kupa">
+          <Link to="/register"><span className="kupa-span">Already Have An Account? </span> Login</Link>
+        </div>
+      </form>
+
+      
+      <div className="hir-or">
+        <hr className="hir"/>
+        <p className="hir-pee">or</p>
+        <hr className="hir"/>
       </div>
-    </div>
+
+      <button id="google-bt" className="btn btn-outline-dark"><Link><span className="google-sub"><img src={google} className="google" alt="google"/></span> Continue with Google</Link></button>
+      </div>
+
+      </div>
+
   );
 };
 export default Register;

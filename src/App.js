@@ -1,70 +1,54 @@
-import "./App.css";
-import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Arrivals from "./pages/Arrivals";
-import Departures from "./pages/Departures";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import Landingpage from "./pages/Landingpage";
-import { useCallback, useEffect, useState } from "react";
-import { getUserToken, saveUserToken } from "./database/token";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import CreatePin from "./pages/CreatePin";
+import InputOtp from "./pages/InputOtp";
+import PinSuccess from "./pages/PinSuccess";
+import Forgotpassword from "./pages/Forgotpassword";
+import Home from "./pages/Home";
 
 function App() {
-  const [token, setToken] = useState("");
 
-
-  useEffect(() => {
-    const previousLoggedInToken = getUserToken();
-    setToken(previousLoggedInToken);
-  }, []);
-
-  const handleToken = useCallback((loggedInToken) => {
-    setToken(loggedInToken)
-    saveUserToken(loggedInToken)
-  }, []);
-
-  const handleLogout = useCallback((loggedInToken) => {
-    setToken('')
-    saveUserToken('')
-  }, []);
 
   return (
     <div className="App">
-      {token ? (
         <BrowserRouter>
           <Switch>
             <Route exact path="/">
-              <Dashboard handleLogout={handleLogout} />
+              <Home/>
             </Route>
-            <Route path="/arrivals">
-              <Arrivals  handleLogout={handleLogout}  />
-            </Route>
-            <Route path="/departures">
-              <Departures  handleLogout={handleLogout}  />
-            </Route>
-            <Route path="*">
-              <Redirect to="/" />
-            </Route>
-          </Switch>
-        </BrowserRouter>
-      ) : (
-        <BrowserRouter>
-          <Switch>
             <Route exact path="/">
-              <Landingpage />
+              <Home/>
+            </Route>
+            <Route exact path="/">
+              <Home/>
+            </Route>
+            <Route exact path="/">
+              <Home/>
+            </Route>
+            <Route exact path="/">
+              <Home/>
             </Route>
             <Route path="/login">
-              <Login handleToken={handleToken} />
+              <Login/>
             </Route>
             <Route path="/register">
-              <Register  />
+              <Register/>
             </Route>
-            <Route path="*">
-              <Redirect to="/" />
+            <Route path="/forgot-password">
+              <Forgotpassword/>
+            </Route>
+            <Route path="/pin">
+              <CreatePin/>
+            </Route>
+            <Route path="/otp">
+              <InputOtp/>
+            </Route>
+            <Route path="/pin-success">
+              <PinSuccess/>
             </Route>
           </Switch>
         </BrowserRouter>
-      )}
     </div>
   );
 }

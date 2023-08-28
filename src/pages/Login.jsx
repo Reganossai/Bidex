@@ -1,40 +1,33 @@
 import React, { useState } from "react";
-import aeroplane from "../assets/aeroplane.jpg";
-import { fetchUserByEmailAndPassword } from "../database";
 import { Link } from "react-router-dom";
+import back from "../assets/image 1.png";
+import google from "../assets/google.png"
 
-const Login = ({ handleToken }) => {
-  const [emailLogin, setEmailLogin] = useState("");
-  const [passwordLogin, setPasswordLogin] = useState("");
-  const [loginStatus, setLoginStatus] = useState("");
+const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setpassword] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
-    const loggedInUser = fetchUserByEmailAndPassword(emailLogin, passwordLogin);
-    if (loggedInUser) {
-      handleToken(loggedInUser.token);
-    } else {
-      setLoginStatus("Wrong email or password combination");
-    }
+  
   };
+
   return (
     <div className="login-div">
-      <div class="bg"></div>
-      <div className="bgg">
-        <h1>Login</h1>
+      
+    <img src={back} className="imak" alt="imak"/>
+  <div className="form-div">
+  <h1>Login</h1>
       <form>
         <div className="form-group">
-          <label for="inputUsername">Username</label>
+          <label for="email">Email address</label>
           <input
-            type="text"
-            name="emailLogin"
-            value={emailLogin}
-            onChange={(e) => {
-              setEmailLogin(e.target.value);
-            }}
+            type="email"
+            name="email"
+            value={email}
+
             className="form-control"
-            id="inputEmail"
-            placeholder="Enter Email"
+            placeholder="Enter your email"
           />
         </div>
         <div className="form-group">
@@ -42,36 +35,38 @@ const Login = ({ handleToken }) => {
           <input
             type="password"
             className="form-control"
-            name="passwordLogin"
-            value={passwordLogin}
-            onChange={(e) => {
-              setPasswordLogin(e.target.value);
-            }}
-            id="inputPassword"
-            placeholder="Password"
-          />
-          <small id="passwordHelp" className="passwordHelp">
-            We'll never share your password with anyone else.
-          </small>
+            name="password"
+            value={password}
+            placeholder="Enter your password"
+          />         
         </div>
-
-        <h1 className="guk">{loginStatus}</h1>
+        <div className="forgot-pass"> <Link to="#">Forgot Password?</Link></div>
         <button
           onClick={handleLogin}
           type="submit"
-          id="sub-btn"
-          className="btn btn-primary"
+          id="log-btn"
         >
           Login
         </button>
         <br />
 
         <div className="kupa">
-          <Link to="/register">Don't have an account yet? Sign up here</Link>
+          <Link to="/register"><span className="kupa-span">Don't Have An Account yet? </span> Sign Up</Link>
         </div>
       </form>
+
+      
+      <div className="hir-or">
+        <hr className="hir"/>
+        <p className="hir-pee">or</p>
+        <hr className="hir"/>
       </div>
-    </div>
+
+      <button id="google-bt" ><Link><span className="google-sub"><img src={google} className="google" alt="google"/></span> Continue with Google</Link></button>
+      </div>
+
+      </div>
+
   );
 };
 

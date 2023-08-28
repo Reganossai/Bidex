@@ -1,287 +1,319 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
-}
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 
-
-hr {
-  width: 1100px;
-  margin-left: 110px;
-  margin-top: -15px;
-
-}
-
-.homepage {
-  display: none;
-}
-
-
-.guk {
-  color: darkred;
-  font-size: 20px;
-}
-
-.login-div {
-  position: relative;
-  z-index: 1;
-  margin-top: -20px;
-  width: 100%;
-  height: 150vh;
-}
-
-.landingpage-div{
-  position: relative;
-  z-index: 1;
-  margin-top: -20px;
-  width: 100%;
-  height: 150vh;
-}
-
-.landingpage-div .bg{
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: url("./assets/ae.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit: fill;
-  opacity: 0.2;
-}
-
-
-
-
-
-.register-div {
-  position: relative;
-  z-index: 1;
-  margin-top: -20px;
-  width: 100%;
-  height: 150vh;
-}
-
-.register-div .bg{
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: url("./assets/airr.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit: fill;
-  opacity: 0.6;
-}
-
-
-#passwordHelp{
-  color: black;
-}
-
-.login-div .bg {
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  background-image: url("./assets/airr.jpg");
-  background-size: cover;
-  background-position: center;
-  object-fit: fill;
-  opacity: 0.6;
-}
-
-.login-div .bgg {
-  position: relative;
-  z-index: 1;
-}
-
-
-
-.kug {
-  color: green;
-}
-
-.kuga {
-  margin: 50px 0px 0px 580px;
-
-}
-
-.kuga a {
-  text-decoration: none;
-  
-
-}
-
-.kupa {
-  margin: 10px 0px 0px 400px;
-  
-}
-
-.kupa a{
-  color: black;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-
-.background img {
-  width: 100%;
-  height: 100%;
-  opacity: 0.4;
-}
-
-.airplane {
-  width: 1000px;
-  opacity: 0.2;
-  margin: 0px 0px 0px 100px;
-}
-
-.form-group {
-  z-index: 99;
-  margin: 0px 0px 0px 400px;
-  position: relative;
-}
-
-.form-group input {
-  width: 500px;
-}
-
-h1 {
-  margin: 20px 0px 0px 550px;
-}
-
-#sub-btn {
-  margin: 20px 0px 0px 400px;
-}
-
-
-
-/* DASHBOARD */
-
-.logoo {
-  width: 120px;
-}
-
-nav {
+.login-div{
   display: flex;
-  flex-direction: row;
-  
 }
 
-.navbar-questions-solutions {
+.register-div{
   display: flex;
-  flex-direction: column;
-
 }
 
-.logo-div {
-  margin: 0px 0px 0px 20px;
+.imak{
+  height: 832px;
+  width: 756px;
 }
 
-#navbarSupportedContent {
-  margin: 5px 0px 0px 650px;
+.form-div{
+  margin: 50px 0px 0px 50px;
 }
 
-#navbarSupportedContent ul {
-  display: flex;
-  flex-direction: row;
-}
-
-#navbarSupportedContent a {
-  text-decoration: none;
-  margin: 0px 10px 0px 10px;
-  padding: 7px 15px 7px 15px;
-  font-weight: 400;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.nav-link {
-  list-style-type: none;
-
-}
-
-.active {
-  border-bottom: 5px solid black;
+.form-divv{
+  margin: 0px 0px 0px 50px;
 }
 
 
-/* ARRIVALS AND DEPARTURES*/
-.arrival-div h5 {
-  display: none;
+.form-div h1{
+  height: 100px;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0px 0px 200px;
 }
 
-.departure-div h5 {
-  display: none;
-
+.form-div h2{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0px 0px 20px 120px;
 }
 
-
-td,
-th{
-  width: 300px;
+.form-div p{
+  font-size: 15px;
+  margin: 0px 30px 30px 0px;
   text-align: center;
-  border: 1px solid black;
-  padding: 5px;
 }
 
-table {
-  border-spacing: 0 15px;
-  margin: 0px 0px 0px 30px;
+.form-group{
+  margin: 20px 0px 5px 15px;
 }
 
-.dashboard h2 {
-  color: #B6D0E2;
-  font-size: 25px;
-  text-align: center;
-  margin: 30px 0px 25px 0px;
-
+.form-group label{
+  font-weight: 500;
+  padding: 10px 0px 10px 4px;
 }
 
-.zaracho {
-  display: none;
+.form-group input{
+  padding: 7px 5px 7px 10px;
+  border-radius: 17px;
+  border: 1px solid lightblue;
+  width: 470px;
 }
 
-#login-landing{
-  margin-right: 20px;
+
+.form-groupp{
+  margin: 20px 0px 5px 15px;
+  
 }
 
-#login-landing a{
+.form-groupp label{
+  font-weight: 500;
+  padding: 10px 0px 10px 4px;
+}
+
+.form-groupp input{
+  padding: 7px 5px 7px 10px;
+  border-radius: 17px;
+  border: 1px solid lightblue;
+  width: 400px;
+  margin: 0px 0px 0px 10px;
+}
+
+.form-groupp-sub{
+  display: flex;
+}
+
+.chee{
+  padding: 7px 10px 7px 10px;
+  border: 1px solid lightblue;
+  border-radius: 20px;
+}
+
+
+.forgot-pass{
+ text-decoration: none;
+ margin: 20px 0px 0px 185px;
+}
+
+.forgot-pass a{
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#log-btn{
+  margin: 35px 0px 0px 20px;
+  padding: 10px 0px 10px 0px;
+  width: 450px;
+  border-radius: 40px;
+  background-color:rgb(31, 94, 250);
   color: white;
 }
 
-#register-landing a{
+#for-btn{
+  margin: 250px 0px 0px 20px;
+  padding: 10px 0px 10px 0px;
+  width: 450px;
+  border-radius: 40px;
+  background-color:rgb(31, 94, 250);
+  color: white;
+}
+
+.kupa{
+  margin: 20px 0px 0px 110px;
+  font-size: 17px; 
+}
+
+.kupa a{
+  text-decoration: none;
+  font-weight: 400;
+}
+
+
+.kupa-span{
+  color: black;
+  
+}
+
+.hir-or{
+  display: flex;
+  margin: 25px 0px 0px 100px;
+}
+
+.hir{
+color: black;
+width: 130px;
+margin-right: 20px;
+margin-left: 0px;
+margin-top: 15px;
+}
+
+.hir-pee{
+  font-weight: 500;
+  margin-top: 3px;
+  margin-right: 10px;
+
+}
+
+.google{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+
+}
+
+.google-sub{
+  position: absolute;
+  left: 930px;
+}
+
+#google-bt{
+  margin: 35px 0px 0px 20px;
+  padding: 10px 0px 10px 0px;
+  width: 450px;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+
+#google-bt a{
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+
+}
+
+.terms{
+ margin: 20px 0px 0px 15px;
+ width: 500px;
+}
+
+
+.terms a{
+  text-decoration: none;
+  font-weight: 500;
   color: black;
 }
 
+.blue{
+  color: #0096FF;
+}
 
-.footer-div {
-  background-color: black;
+
+/* NAVBAR */
+
+.navbar{
+  background-color:#194BC8;
+  color: #FFFFFF;
+
+}
+
+#navbarSupportedContent{
+  margin: 0px 0px 0px 80px;
+}
+
+#navbarSupportedContent ul{
   display: flex;
-  flex-direction: row;
-  margin-top: 100px;
-  height: 380px;
 }
 
-.footer-div h1 {
-  margin: 20px 0px 0px 80px;
-  width: 800px;
-  font-family: courier;
+.search{
+  padding: 5px 0px 5px 15px;
+  border-radius: 25px;
+  width: 219px;
+  margin: 10px 0px 0px 0px;
 }
 
-.footer-div img {
+.logoo{
   width: 100px;
-  height: 80px;
+  margin: 40px 0px 0px 40px;
+}
+
+.font-awesome-one{
+  padding: 10px 10px 10px 10px;
+  background-color: black;
   border-radius: 20px;
-  margin: 20px 0px 10px 50px;
+  margin: 10px 0px 0px -19px
+}
+
+.bell{
+  margin: 10px 0px 0px 15px;
+  padding: 8px 8px 8px 8px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+.hello{
+  margin: 0px 0px 0px 600px;
+}
+
+.hello h1{
+ 
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.hello p{
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px 0px 0px 50px;
+}
+
+
+/* SIDEBAR */
+.sidebar-div li .active{
+  background-color: whitesmoke;
+  padding: 10px 55px 10px 5px;
+  border-radius: 25px;
+  color: blue;
+}
+
+.sidebar-div{
+  background-color:  #194BC8;
+  width: 220px;
+  height: 100vh;
+}
+
+.sidebar-div ul{
+  padding: 30px 0px 0px 20px;
+}
+
+.fontawesome-sidebar{
+  margin: 0px 7px 0px 0px;
+  color: whitesmoke; 
 
 }
 
+#dash{
+  padding: 10px 5px 10px 5px;
+  margin: 5px 0px 5px 0px ;
+  border-radius: 25px;
+  width: 180px;
+  color: white;
+}
+
+#adm{
+  padding: 10px 5px 10px 5px;
+  margin: 5px 0px 5px 0px ;
+  border-radius: 25px;
+  width: 180px;
+  color: white;
+}
+
+#prof{
+  padding: 10px 5px 10px 5px;
+  margin: 5px 0px 5px 0px ;
+  border-radius: 25px;
+  width: 180px;
+  color: white;
+}
+
+#lion{
+  padding: 10px 5px 10px 5px;
+  margin: 150px 0px 5px 0px ;
+  border-radius: 25px;
+  width: 180px;
+  color: white;
+}
 
 @media only screen and (max-width: 800px) {
   .zaracho {
@@ -289,211 +321,4 @@ table {
     margin-right: 40px;
   }
 
-  .arrival-div{
-    width: 100%;
-    height: 250vh;
-    overflow-y: hidden;
-  }
-
-  .arrival-div h5 {
-    display: block;
-    color: #B6D0E2;
-    margin: 15px 0px 15px 130px;
-
-  }
-
-  .departure-div h5 {
-    display: block;
-    color: #B6D0E2;
-    margin: 15px 0px 15px 130px;
-
-  }
-
-  .logo-div img {
-    width: 100px;
-    border-radius: 20px;
-  }
-
-  #navbarSupportedContent {
-    display: none;
-  }
-
-  #navbarSupportedContentMobile {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 95px;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    background-color: whitesmoke;
-  
-  }
-
-  #navbarSupportedContentMobile li a {
-    color: darkblue;
-    text-decoration: none;
-    margin: 30px 0px 30px 0px;
-    border-width: 400px;
-  }
-
-  #navbarSupportedContentMobile button {
-    margin: 10px 0px 30px 0px;
-
-
-  }
-
-  .landingpage-div{
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    
-
-  }
-
-  .homepage {
-    display: block;
-    width: 380px;
-    margin: 25px 0px 0px 20px;
-  }
-
-  .homepage h1 {
-    margin: 0px 0px 10px 0px;
-    font-size: 38px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .homepage h2 {
-    margin: 0px 0px 10px 0px;
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #B6D0E2;
-  }
-
-  .homepage h3 {
-    width: 340px;
-    font-size: 17px;
-    color: #808080;
-  }
-
-
-
-
-  hr {
-    display: none;
-  }
-
-  nav {
-    background-color: #B6D0E2;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  td {
-    width: 500px;
-
-  }
-
-  table {
-    margin: 0px 10px 30px 10px;
-  }
-
-  .dashboard {
-    width: 100%;
-    height: 300vh;
-
-  }
-
-  .footer-div {
-    display: flex;
-    flex-direction: column;
-    margin: 0px auto;
-    height: 800px;
-    padding-bottom: 80px;
-    width: 100%;
-  }
-
-  .footer-div h1 {
-    margin: 20px 5px 0px 5px;
-    width: 390px;
-    font-family: courier;
-    color: antiquewhite;
-    font-size: 20px;
-  }
-
-  .footer-div img {
-    width: 100px;
-    height: 80px;
-    border-radius: 20px;
-    margin: 20px 0px 20px 120px;
-
-  }
-
-
-  .airplane {
-    display: none;
-  }
-
-  .nav-link a {
-    color: black;
-  }
-
-  
-  .register-div {
-    width: 100%;
-    margin: 0 auto;
-    height: 100vh;
-    padding: 0px 10px 0px 0px;
-  }
-
-  .register-div h1 {
-    margin: 0px 0px 20px 130px;
-    padding-top: 40px;
-  }
-
-  .login-div {
-    width: 100%;
-    margin: 0 auto;
-    height: 100vh;
-    padding: 0px 10px 0px 0px;
-  }
-
-  
-  .login-div h1 {
-    margin: 0px 0px 20px 160px;
-    padding-top: 40px;
-  }
-
-  .form-group {
-    margin: 0px 0px 0px 10px;
-    
-  }
-
-  .form-group input {
-    width: 380px;
-  }
-
-  #sub-btn {
-    margin: 0px 0px 0px 10px;
-  }
-
-  .kupa {
-    margin: 10px 0px 0px 10px;
-    
-  }
-
-  .guk {
-    color: darkred;
-    font-size: 15px;
-    
-  }
-
-
-
-  .kuga {
-    margin: 50px 0px 0px 100px;
-  }
 }
