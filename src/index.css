@@ -3,57 +3,57 @@
 @import 'tailwindcss/utilities';
 
 
-.login-div{
+.login-div {
   display: flex;
 }
 
-.register-div{
+.register-div {
   display: flex;
 }
 
-.imak{
+.imak {
   height: 832px;
   width: 756px;
 }
 
-.form-div{
+.form-div {
   margin: 50px 0px 0px 50px;
 }
 
-.form-divv{
+.form-divv {
   margin: 0px 0px 0px 50px;
 }
 
 
-.form-div h1{
+.form-div h1 {
   height: 100px;
   font-size: 30px;
   font-weight: 600;
   margin: 20px 0px 0px 200px;
 }
 
-.form-div h2{
+.form-div h2 {
   font-size: 30px;
   font-weight: 600;
   margin: 0px 0px 20px 120px;
 }
 
-.form-div p{
+.form-div p {
   font-size: 15px;
   margin: 0px 30px 30px 0px;
   text-align: center;
 }
 
-.form-group{
+.form-group {
   margin: 20px 0px 5px 15px;
 }
 
-.form-group label{
+.form-group label {
   font-weight: 500;
   padding: 10px 0px 10px 4px;
 }
 
-.form-group input{
+.form-group input {
   padding: 7px 5px 7px 10px;
   border-radius: 17px;
   border: 1px solid lightblue;
@@ -61,17 +61,17 @@
 }
 
 
-.form-groupp{
+.form-groupp {
   margin: 20px 0px 5px 15px;
-  
+
 }
 
-.form-groupp label{
+.form-groupp label {
   font-weight: 500;
   padding: 10px 0px 10px 4px;
 }
 
-.form-groupp input{
+.form-groupp input {
   padding: 7px 5px 7px 10px;
   border-radius: 17px;
   border: 1px solid lightblue;
@@ -79,94 +79,94 @@
   margin: 0px 0px 0px 10px;
 }
 
-.form-groupp-sub{
+.form-groupp-sub {
   display: flex;
 }
 
-.chee{
+.chee {
   padding: 7px 10px 7px 10px;
   border: 1px solid lightblue;
   border-radius: 20px;
 }
 
 
-.forgot-pass{
- text-decoration: none;
- margin: 20px 0px 0px 185px;
+.forgot-pass {
+  text-decoration: none;
+  margin: 20px 0px 0px 185px;
 }
 
-.forgot-pass a{
+.forgot-pass a {
   text-decoration: none;
   font-weight: 500;
 }
 
-#log-btn{
+#log-btn {
   margin: 35px 0px 0px 20px;
   padding: 10px 0px 10px 0px;
   width: 450px;
   border-radius: 40px;
-  background-color:rgb(31, 94, 250);
+  background-color: rgb(31, 94, 250);
   color: white;
 }
 
-#for-btn{
+#for-btn {
   margin: 250px 0px 0px 20px;
   padding: 10px 0px 10px 0px;
   width: 450px;
   border-radius: 40px;
-  background-color:rgb(31, 94, 250);
+  background-color: rgb(31, 94, 250);
   color: white;
 }
 
-.kupa{
+.kupa {
   margin: 20px 0px 0px 110px;
-  font-size: 17px; 
+  font-size: 17px;
 }
 
-.kupa a{
+.kupa a {
   text-decoration: none;
   font-weight: 400;
 }
 
 
-.kupa-span{
+.kupa-span {
   color: black;
-  
+
 }
 
-.hir-or{
+.hir-or {
   display: flex;
   margin: 25px 0px 0px 100px;
 }
 
-.hir{
-color: black;
-width: 130px;
-margin-right: 20px;
-margin-left: 0px;
-margin-top: 15px;
+.hir {
+  color: black;
+  width: 130px;
+  margin-right: 20px;
+  margin-left: 0px;
+  margin-top: 15px;
 }
 
-.hir-pee{
+.hir-pee {
   font-weight: 500;
   margin-top: 3px;
   margin-right: 10px;
 
 }
 
-.google{
+.google {
   width: 25px;
   height: 25px;
   margin-right: 10px;
 
 }
 
-.google-sub{
+.google-sub {
   position: absolute;
   left: 930px;
 }
 
-#google-bt{
+#google-bt {
   margin: 35px 0px 0px 20px;
   padding: 10px 0px 10px 0px;
   width: 450px;
@@ -174,66 +174,67 @@ margin-top: 15px;
   border: 1px solid black;
 }
 
-#google-bt a{
+#google-bt a {
   font-weight: 700;
   color: black;
   text-decoration: none;
 
 }
 
-.terms{
- margin: 20px 0px 0px 15px;
- width: 500px;
+.terms {
+  margin: 20px 0px 0px 15px;
+  width: 500px;
 }
 
 
-.terms a{
+.terms a {
   text-decoration: none;
   font-weight: 500;
   color: black;
 }
 
-.blue{
+.blue {
   color: #0096FF;
 }
 
 
 /* NAVBAR */
 
-.navbar{
-  background-color:#194BC8;
+.navbar {
+  background-color: #194BC8;
   color: #FFFFFF;
+  height: 100px;
 
 }
 
-#navbarSupportedContent{
+#navbarSupportedContent {
   margin: 0px 0px 0px 80px;
 }
 
-#navbarSupportedContent ul{
+#navbarSupportedContent ul {
   display: flex;
 }
 
-.search{
+.search {
   padding: 5px 0px 5px 15px;
   border-radius: 25px;
   width: 219px;
   margin: 10px 0px 0px 0px;
 }
 
-.logoo{
+.logoo {
   width: 100px;
   margin: 40px 0px 0px 40px;
 }
 
-.font-awesome-one{
+.font-awesome-one {
   padding: 10px 10px 10px 10px;
   background-color: black;
   border-radius: 20px;
   margin: 10px 0px 0px -19px
 }
 
-.bell{
+.bell {
   margin: 10px 0px 0px 15px;
   padding: 8px 8px 8px 8px;
   background-color: white;
@@ -241,18 +242,18 @@ margin-top: 15px;
   border-radius: 20px;
 }
 
-.hello{
+.hello {
   margin: 0px 0px 0px 600px;
 }
 
-.hello h1{
- 
+.hello h1 {
+
   font-size: 20px;
   font-weight: 700;
 }
 
 
-.hello p{
+.hello p {
   font-size: 12px;
   font-weight: 400;
   margin: 0px 0px 0px 50px;
@@ -260,59 +261,581 @@ margin-top: 15px;
 
 
 /* SIDEBAR */
-.sidebar-div li .active{
+#adm .active {
   background-color: whitesmoke;
-  padding: 10px 55px 10px 5px;
+  padding: 10px 55px 10px 15px;
   border-radius: 25px;
-  color: blue;
+  color: #1F5EFA;
 }
 
-.sidebar-div{
-  background-color:  #194BC8;
-  width: 220px;
-  height: 100vh;
+#prof .active {
+  background-color: whitesmoke;
+  padding: 10px 35px 10px 15px;
+  border-radius: 25px;
+  color: #1F5EFA;
 }
 
-.sidebar-div ul{
-  padding: 30px 0px 0px 20px;
+.sidebar-div {
+  background-color: #194BC8;
+  height: 141vh;
 }
 
-.fontawesome-sidebar{
+.sidebar-div ul {
+  padding: 50px 0px 0px 20px;
+}
+
+.fontawesome-sidebar {
   margin: 0px 7px 0px 0px;
-  color: whitesmoke; 
 
 }
 
-#dash{
+#adm {
   padding: 10px 5px 10px 5px;
-  margin: 5px 0px 5px 0px ;
+  margin: 5px 0px 5px 0px;
   border-radius: 25px;
   width: 180px;
   color: white;
 }
 
-#adm{
+#prof {
   padding: 10px 5px 10px 5px;
-  margin: 5px 0px 5px 0px ;
+  margin: 5px 0px 5px 0px;
   border-radius: 25px;
   width: 180px;
   color: white;
 }
 
-#prof{
-  padding: 10px 5px 10px 5px;
-  margin: 5px 0px 5px 0px ;
+#lion {
+  padding: 250px 5px 10px 5px;
+  margin: 150px 0px 5px 0px;
   border-radius: 25px;
   width: 180px;
   color: white;
 }
 
-#lion{
-  padding: 10px 5px 10px 5px;
-  margin: 150px 0px 5px 0px ;
+
+/* SEEDS */
+.ovrl {
+  position: absolute;
+  top: 90px;
+  left: 200px;
+  width: 1149px;
+  height: fit-content;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  padding-bottom: 40px;
+
+}
+
+.seed-container {
+  padding: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 1149px;
+  height: 100vh;
+  flex-shrink: 0;
+  border-radius: 30px 30px 0px 0px;
+  background: #fff;
+  -webkit-border-radius: 30px 30px 0px 0px;
+  -moz-border-radius: 30px 30px 0px 0px;
+  -ms-border-radius: 30px 30px 0px 0px;
+  -o-border-radius: 30px 30px 0px 0px;
+}
+
+.seed-container-sub {
+  width: 700px;
+
+}
+
+.ong-seed {
+  width: 700px;
+}
+
+#ong-seed-sub {
+  width: 700px;
+}
+
+.btn-country {
+  margin-top: 15px;
+  width: 219px;
+  height: 49px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 34.5px;
+  background: #eaeaea;
+}
+
+.btn-country button {
+  display: flex;
+  width: 97px;
+  height: 39.052px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+
+  border-radius: 12px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.btn-country button h3 {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 125% */
+  letter-spacing: 0.8px;
+}
+
+.white-currency {
+  color: #fff !important;
+}
+
+.seed-logo {
+  color: #000;
+  font-family: Plus Jakarta Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.ongoing-seed-header {
+  display: flex;
+  margin-top: 20px;
+  width: 722px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.seed-state {
+  padding: 5px;
+  width: 130px;
+  height: 40px;
+
+  /* gap: 8px; */
+  /* flex-shrink: 0; */
+  border-radius: 30px;
+  border: 1px solid #cacaca;
+}
+
+.new-seed-container {
+  width: 300px;
+  padding: 12px;
+  height: 401px;
   border-radius: 25px;
+  margin-top: 35px;
+  margin-left: 70px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: #fff;
+}
+
+.seed-table {
+  width: 722px;
+}
+
+.seed-table:nth-child(odd) {
+  background: rgba(31, 94, 250, 0.05);
+}
+
+.seed-table:nth-child(even) {
+  background: rgba(31, 94, 250, 0.1);
+}
+
+.seed-table:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.seed-table:first-child {
+  border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -o-border-radius: 10px 10px 0px 0px;
+}
+
+.seed-btn {
+  width: 275px;
+  height: 57px;
+  transition: all 0.4s ease;
+  border-radius: 10px;
+  background: #1f5efa;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.seed-btn:hover {
+  background: #6591ff;
+}
+
+.seed-country-input {
+  width: 275px;
+  height: 64px;
+  border-radius: 15px;
+  background: rgba(31, 94, 250, 0.3);
+}
+
+.country-flag {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 22px;
+  background-color: black;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+}
+
+.country-flag.lightBlue {
+  background-color: #1dc1a9;
+}
+
+.select-currency {
+  background-color: transparent;
+  padding: 10px;
+  border: 0;
+  color: #000;
+  font-weight: 600;
+  outline: 0;
+}
+
+.arrow-down {
+  transform: rotate(180.049deg);
+  -webkit-transform: rotate(180.049deg);
+  -moz-transform: rotate(180.049deg);
+  -ms-transform: rotate(180.049deg);
+  -o-transform: rotate(180.049deg);
+}
+
+.country-icon {
+  width: 31px;
+  height: 31px;
+  border-radius: 31px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 31px;
+  -moz-border-radius: 31px;
+  -ms-border-radius: 31px;
+  -o-border-radius: 31px;
+}
+
+.seed-status {
+  display: inline-flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  text-transform: capitalize;
+}
+
+.seed-status-canceled {
+  color: #f00;
+  background-color: rgba(255, 0, 0, 0.08);
+}
+
+.seed-status-active {
+  color: #18800f;
+  background-color: rgba(66, 255, 0, 0.08);
+}
+
+.seed-status-completed {
+  color: #194bc8;
+  background-color: rgba(31, 94, 250, 0.05);
+}
+
+/* HOME */
+.ovrl-sub{
+  margin: 70px 0px 0px 30px;
+  height: fit-content;
+  padding-bottom: 40px;
+}
+
+.header{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0px 0px 15px 0px;
+}
+
+.naija-usa {
+  display: flex;
+  width: 200px;
+  border-radius: 20px;
+  padding: 3px 0px 3px 0px;
+  background-color: #D3D3D3;
+  margin: 20px 0px 50px 0px;
+}
+
+.naija-usa h1 {
+  font-size: 12px;
+  margin: 3px 0px 0px 5px;
+
+}
+
+.nj {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.u-s-a {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.nj-table {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.u-s-a-table {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+#naija-bt {
+  display: flex;
+  border-radius: 25px;
+  background-color: #194BC8;
+  width: 90px;
+  margin: 0px 5px 0px 8px;
+  border: none;
+}
+
+#usa-bt {
+  display: flex;
+  border-radius: 25px;
+  background-color: #E5E4E2;
+  color: black;
+  width: 90px;
+  border: 1px solid #D3D3D3;
+}
+
+.plus {
+  width: 48px;
+  height: 178px;
+  padding: 65px 0px 0px 12px;
+  border: 1px dashed black;
+  border-radius: 15px;
+}
+
+
+.plus h1{
+  font-size: 30px;
+}
+
+.plus-dash {
+  display: flex;
+
+}
+
+.dash{
+  background-color: #E9EFFF;
+  width: 398px;
+  height: 178px;
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  margin: 0px 0px 0px 30px;
+}
+
+.dash-two{
+  background-color: #E9EFFF;
+  width: fit-content;
+  height: 178px;
+  border-radius: 20px;
+  border: 1px solid lightblue;
+  padding-right: 20px;
+  margin: 0px 0px 0px 30px;
+}
+
+
+.pay-fun-mor{
+  display: flex;
+  margin: 20px 0px 0px 10px;
+}
+
+.pay-fun-mor h1{
+  margin: 10px 25px 0px 13px;
+  font-weight: 700;
+}
+
+.amount{
+  font-size: 40px;
+  font-weight: 700;
+  width: fit-content;
+  margin: 10px 0px 0px 10px;
+
+}
+
+.updated{
+  margin: 15px 0px 0px 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.font-awesome-home{
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  border-radius: 15px;
+  color: #194bc8;
+}
+
+
+.am-flag{
+  margin: -35px 0px 0px 180px;
+}
+
+.seed-home{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.dark-blue{
+  background-color: #ecf7f9;
+}
+
+.light-blue{
+  background-color:#F0FFFF;
+}
+
+#tb{
+  width: 740px;
+}
+
+.rate{
+  font-size: 10px;
+  font-weight: 700;
+  margin: 0px 0px 0px 10px;
+
+}
+
+.lol{
+  font-size: 17px;
+  color:#1F5EFA;
+}
+
+.naira-dollar{
   width: 180px;
-  color: white;
+}
+
+.naira-dollar p{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rod{
+  width: 75px;
+}
+
+.keen p{
+  font-weight: 600;
+}
+
+#dropdownMenuButton{
+  background-color: transparent;
+  color: darkslategray;
+  width: 140px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  margin: 0px 0px 0px 530px;
+}
+
+.seed-all-currency{
+  display: flex;
+  margin: 80px 0px 50px 0px;
+}
+
+.seed-all-currency h1{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.transactions-home{
+  border: 1px solid gray;
+  width: 300px;
+  position: absolute;
+  top: 520px;
+  right: 27px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+
+}
+
+.trans-home-sub{
+  display: flex;
+}
+
+.trans-see-more{
+  display: flex;
+}
+
+.trans-see-more h1{
+  margin: 20px 0px 10px 10px;
+  font-weight: 500;
+}
+
+.trans-see-more a{
+  margin: 20px 0px 10px 135px;
+  color: #0096FF;
+  text-decoration: underline;
+}
+
+.arrow-trans-home{
+  width: 10px;
+  height: 10px;
+  z-index: 40;
+  margin: 5px 15px 0px 15px;
+
+}
+
+
+.ellipse-trans-home{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+
+}
+
+.dey-play h2{
+  font-size: 13px;
+  font-weight: 600;
+  margin: 5px 0px 0px 0px;
+
+}
+
+.dey-play p{
+  font-size: 10px;
+  color: gray;
+  margin: 0px 0px 10px 0px;
+}
+
+.polo-g h5{
+  font-size: 13px;
+  font-weight: 600;
+  margin: 5px 0px 0px 70px;
+
+}
+
+.polo-g p{
+  font-size: 10px;
+  color: gray;
+  margin: 0px 0px 10px 80px;
 }
 
 @media only screen and (max-width: 800px) {

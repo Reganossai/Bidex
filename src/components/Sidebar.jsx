@@ -9,42 +9,39 @@ const Sidebar = () => {
     <div className="sidebar-div">
       <nav>
         <ul>
-          <li id="dash">
-            <NavLink  activeClassName="active" to="/">
+          <li id="adm">
+            <NavLink  activeClassName="active" to="/dashboard/home">
             <span> <FontAwesomeIcon icon={faHouse} className="fontawesome-sidebar"/></span>Home
             </NavLink>
           </li>
           <li  id="adm">
-            <NavLink activeClassName="active" to="/seeds">
+            <NavLink activeClassName="active" to="/dashboard/seeds">
              <span> <FontAwesomeIcon icon={faWallet} className="fontawesome-sidebar"/></span>Seeds
             </NavLink>
           </li>
           <li  id="adm">
-            <NavLink activeClassName="active" to="/transitions">
+            <NavLink activeClassName="active" to="/dashboard/transitions">
              <span> <FontAwesomeIcon icon={faRadio} className="fontawesome-sidebar"/></span>Transitions
             </NavLink>
           </li>
-          <li id="prof" >
-            <NavLink  activeClassName="active" to="/messages">
+          <li id="adm" >
+            <NavLink  activeClassName="active" to="/dashboard/messages">
             <span> <FontAwesomeIcon icon={faCommentDots} className="fontawesome-sidebar"/></span>Messages
             </NavLink>
           </li>
           <li id="prof" >
-            <NavLink  activeClassName="active" to="/account">
+            <NavLink  activeClassName="active" to="/dashboard/account">
             <span> <FontAwesomeIcon icon={faUser} className="fontawesome-sidebar"/></span>My Account
             </NavLink>
           </li>
-          <li id="prof" >
-            <NavLink  activeClassName="active" to="/settings">
+          <li id="adm" >
+            <NavLink  activeClassName="active" to="/dashboard/settings">
             <span> <FontAwesomeIcon icon={faGear} className="fontawesome-sidebar"/></span>Settings
             </NavLink>
           </li>
-          <li id="lion" >
-           
+          <li id="lion">
           <button><FontAwesomeIcon icon={faRightFromBracket} className="fontawesome-sidebar"/>Logout</button>
-           
           </li>
-          
         </ul>
       </nav>
     </div>

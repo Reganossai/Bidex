@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 
-const Transitions = () => {
+const Settings = () => {
   return (
     <div>
         <Navbar/>
@@ -11,4 +11,4 @@ const Transitions = () => {
   )
 }
 
-export default Transitions
+export default Settings
