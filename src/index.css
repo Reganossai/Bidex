@@ -54,10 +54,30 @@
 }
 
 .form-group input {
-  padding: 7px 5px 7px 10px;
+  padding: 10px 5px 10px 10px;
   border-radius: 17px;
   border: 1px solid lightblue;
   width: 470px;
+  margin-top: 10px;
+}
+
+.lab-head{
+  font-weight: 600;
+}
+
+#bnm{
+  width: 470px;
+  border-radius: 30px;
+  padding: 15px 0px 15px 0px;
+  margin: 50px 0px 0px 13px;
+}
+
+#bank{
+  padding: 10px 5px 10px 10px;
+  border-radius: 17px;
+  border: 1px solid lightblue;
+  width: 470px;
+  margin-top: 10px;
 }
 
 
@@ -277,7 +297,7 @@
 
 .sidebar-div {
   background-color: #194BC8;
-  height: 141vh;
+  height: 140vh;
 }
 
 .sidebar-div ul {
@@ -320,7 +340,7 @@
   top: 90px;
   left: 200px;
   width: 1149px;
-  height: fit-content;
+  height: 142vh;
   background-color: #FFFFFF;
   border-radius: 20px;
   padding-bottom: 40px;
@@ -564,7 +584,7 @@
 
 .header{
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0px 0px 15px 0px;
 }
 
@@ -633,7 +653,41 @@
   border-radius: 15px;
 }
 
+.acc{
+  width: 400px;
+  background-color: #1f5efa;
+  margin: 20px 0px 0px 0px;
+  padding: 30px 0px 30px 30px;
+  border-radius: 15px;
+}
 
+.acc p{
+  margin: 5px 0px 5px 0px;
+  color: white;
+}
+
+.acc h2{
+  margin: 10px 0px 5px 0px;
+  color: white;
+}
+
+.acc h3{
+  margin: 15px 0px 5px 0px;
+  color: white;
+}
+
+.pin-pass{
+  background-color:#F0FFFF;
+  margin: 30px 0px 0px 5px;
+  padding: 14px 0px 14px 25px;
+  width: 540px;
+  border-radius: 10px;
+
+}
+
+.fag{
+  margin: 0px 10px 0px 0px;
+}
 .plus h1{
   font-size: 30px;
 }
@@ -837,6 +891,460 @@
   color: gray;
   margin: 0px 0px 10px 80px;
 }
+
+.bank-options {
+  display: flex;
+  padding: 12px;
+  width: 1000px;
+  height: 54px;
+  margin: 20px 0px 0px 60px;
+  border-radius: 27.5px;
+  background: #e3e3e3;
+  justify-content: space-between;
+}
+.country-logo {
+  width: 32px;
+  border-radius: 50%;
+  border: 1px solid black;
+  height: 32px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.country-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.country-bank-logo{
+  margin-bottom: 3px;
+}
+
+
+
+.country-initials{
+  color: #000;
+
+font-family: Satoshi;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+}
+.country-name {
+  color: #000;
+ 
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.header-wallet {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.add-icon-btn {
+  width: 27px;
+  height: 27px;
+}
+.header-wallet h3{
+  color:  #0F172A;
+text-align: center;
+/* text-xs Medium */
+font-family: Satoshi;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+}
+.header-wallet h1{
+  color:  #0F172A;
+text-align: center;
+/* Body/text-base/Bold capitalized */
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+text-transform: capitalize;
+}
+
+
+.njj{
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  margin: 0px 20px 0px 0px;
+}
+
+#xxx{
+  margin: 0px 0px 0px 1050px;
+}
+
+.bank-account{
+  position: absolute;
+  top: 20px;
+  z-index: 50;
+  background-color: white;
+  width: 1130px;
+  height: 125vh;
+
+}
+
+/* SETTINGS */
+.settings-menu{
+  display: flex;
+  background-color: #EAEAEA;
+  border-radius: 30px;
+  color: black;
+  width: 553px;
+  height: 49px;
+}
+
+.settings-menu .active{
+  background-color: #194BC8;
+  color: white;
+  padding: 10px 15px 0px 15px;
+  font-size: 13px;
+  border-radius: 20px;
+}
+
+#menu-links{
+  margin: 10px 15px 0px 25px;
+  font-weight: 600;
+  width: fit-content;
+ 
+}
+
+.settings-header{
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0px 0px 50px 0px;
+}
+
+#add-account-bt{
+  margin: 50px 0px 0px 0px;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.fap-plus{
+  margin: 0px 15px 0px 0px;
+}
+
+.ovrl-sub-security-change-password-popup{
+  margin: 70px 0px 0px 30px;
+  height: fit-content;
+  padding: 40px 0px 0px 0px;
+  z-index: 50;
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  background-color: white;
+  width: 700px;
+}
+
+.ovrl-sub-security-change-password-popup input{
+  width: 350px;
+  padding: 10px 0px 10px 20px;
+}
+
+#texp{
+  width: 350px;
+  padding: 10px 0px 10px 20px;
+  border-radius: 20px;
+}
+
+#olali{
+  width: 340px;
+  border-radius: 20px;
+  margin: 20px 0px 0px 18px;
+}
+
+.ovrl-sub-security-change-password-popup h1{
+  margin: 0px 0px 0px 20px;
+}
+
+.ovrl-sub-security-change-password-popup p{
+  font-size: 13px;
+  font-weight: 500;
+  margin: 15px 0px 0px 19px;
+}
+
+#change-pass-bt{
+  background-color: #1f5efa;
+  margin: 20px 0px 0px 15px;
+  border-radius: 20px;
+
+}
+
+.boa{
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0px 30px 20px;
+}
+
+
+/* Messages */
+.messages {
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0px 0px;
+}
+.message-records {
+  padding: 20px 0px;
+  margin-top: 25px;
+}
+.message-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 460px;
+  padding: 10px 28px;
+  height: 75px;
+  border-radius: 37.5px;
+  background: #bccffe;
+}
+.input-utils {
+  width: 39px;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 39px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.input-add {
+  display: flex;
+}
+.add-icon {
+  color: #292d32;
+  background-color: #fff;
+}
+.speaker-icon {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  justify-content: center;
+  background-color: #194bc8;
+}
+.message-list {
+  display: flex;
+  width: 400px;
+  height: 56px;
+  margin-top: 0px 10px;
+  justify-content: space-between;
+}
+.message-info {
+  display: flex;
+  justify-content: space-between;
+}
+.name-message {
+  display: flex;
+  flex-direction: column;
+}
+.message-icon {
+  width: 35px;
+  margin-top: 4px;
+  height: 35px;
+  border-radius: 35px;
+  border: 0.5px solid #194bc8;
+}
+.message-name {
+  color: #000000;
+  font-family: Satoshi;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+.message-content {
+  color: #181818;
+  text-align: center;
+  /* text-sm Regular */
+  font-family: Satoshi;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.time-message {
+  color: #000;
+  text-align: center;
+  margin-top: 15px;
+  /* text-xs Medium */
+  font-family: Satoshi;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.message-logo {
+  color: #000;
+  font-family: Plus Jakarta Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.message-person-info {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  width: 690px;
+  position: relative;
+  margin: -70px 0px 0px 0px;
+  height: 135vh;
+  background: rgba(31, 94, 250, 0.1);
+}
+.message-icon-converse {
+  margin-left: 25px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid blue;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+}
+.message-person-status {
+  color: #494949;
+
+  /* text-xs Medium */
+  font-family: Satoshi;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+.message-converse {
+  padding: 10px;
+  width: 566px;
+}
+
+.message-icon-utils {
+  width: 24px;
+  height: 24px;
+
+  background-color: #fff;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+}
+
+.message-chat {
+  width: 560px;
+  margin-top: 30px;
+  padding: 30px 20px 50px 70px;
+}
+.sender-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.receiver-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* .sender-message{
+  
+} */
+.sender-message h2 {
+  margin-top: 8px;
+  padding: 10px 18px;
+  max-width: 300px;
+  border-radius: 46px;
+  background: #000;
+  color: #fff;
+}
+.receiver-message h2 {
+  margin-top: 8px;
+  padding: 10px 18px;
+  border-radius: 46px;
+  max-width: 300px;
+  background: #1f5efa;
+  color: #fff;
+}
+.message-time {
+  margin-top: 4px;
+  color: #8a91a8;
+  text-align: right;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+.messaging-box {
+  position: absolute;
+  bottom: 50px;
+}
+.message-chat {
+  height: 105vh;
+  margin: 2px;
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+.message-logo {
+  color: #000;
+  font-family: Plus Jakarta Sans;
+  font-size: 24px;
+  font-style: normal;
+  margin-bottom: 55px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+
+/* Transactions */
+
+
+.usa-bla{
+  display: flex;
+}
+
+.usa-bla h1{
+  font-size: 12px;
+}
+
+.daty{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.gree p{
+  color: green;
+  font-weight: 600;
+}
+
+
+.ree p{
+  color: crimson;
+  font-weight: 600;
+}
+
+#tbb{
+  width: 1050px;
+}
+
 
 @media only screen and (max-width: 800px) {
   .zaracho {

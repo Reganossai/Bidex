@@ -7,57 +7,70 @@ import PinSuccess from "./pages/PinSuccess";
 import Forgotpassword from "./pages/Forgotpassword";
 import Home from "./pages/Home";
 import Seeds from "./pages/Seeds";
-import Transitions from "./pages/Transitions";
 import Messages from "./pages/Messages";
 import Account from "./pages/Account";
 import Settings from "./pages/Settings";
+import Editprofile from "./pages/Editprofile";
+import ManageBanks from "./pages/ManageBanks";
+import Security from "./pages/Security";
+import Transactions from "./pages/Transactions";
+import Help from "./pages/Help";
 
 function App() {
-
-
   return (
     <div className="App">
-        <BrowserRouter>
-          <Switch>
+      <BrowserRouter>
+        <Switch>
           <Route exact path="/">
-              <Login/>
-            </Route>
-            <Route path="/register">
-              <Register/>
-            </Route>
-            <Route exact path="/dashboard/home">
-              <Home/>
-            </Route>
-            <Route  exact path="/dashboard/seeds">
-              <Seeds/>
-            </Route>
-            <Route exact path="/dashboard/transitions">
-              <Transitions/>
-            </Route>
-            <Route exact path="/dashboard/messages">
-              <Messages/>
-            </Route>
-            <Route exact path="/dashboard/account">
-              <Account/>
-            </Route>
-            <Route exact path="/dashboard/settings">
-              <Settings/>
-            </Route>
-          
-            <Route path="/forgot-password">
-              <Forgotpassword/>
-            </Route>
-            <Route path="/pin">
-              <CreatePin/>
-            </Route>
-            <Route path="/otp">
-              <InputOtp/>
-            </Route>
-            <Route path="/pin-success">
-              <PinSuccess/>
-            </Route>
-          </Switch>
-        </BrowserRouter>
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
+          <Route exact path="/dashboard/home">
+            <Home />
+          </Route>
+          <Route exact path="/dashboard/seeds">
+            <Seeds />
+          </Route>
+          <Route exact path="/dashboard/transactions">
+            <Transactions />
+          </Route>
+          <Route exact path="/dashboard/messages">
+            <Messages />
+          </Route>
+          <Route exact path="/dashboard/account">
+            <Account />
+          </Route>
+          <Route exact path="/dashboard/settings">
+            <Settings />
+          </Route>
+          <Route exact path="/dashboard/settings/edit-profile">
+            <Editprofile />
+          </Route>
+          <Route exact path="/dashboard/settings/manage-banks">
+            <ManageBanks/>
+          </Route>
+          <Route exact path="/dashboard/settings/security">
+            <Security/>
+          </Route>
+          <Route exact path="/dashboard/settings/help-and-support">
+            <Help/>
+          </Route>
+          <Route path="/forgot-password">
+            <Forgotpassword />
+          </Route>
+          <Route path="/pin">
+            <CreatePin />
+          </Route>
+          <Route path="/otp">
+            <InputOtp />
+          </Route>
+          <Route path="/pin-success">
+            <PinSuccess />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

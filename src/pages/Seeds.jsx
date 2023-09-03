@@ -12,7 +12,7 @@ const Seeds = () => {
       <div className="ovrl">
         <div className="seed-container ">
           <div className="seed-container-sub">
-            <h1 className="text-black font-bold seed-logo">Seed</h1>
+            <h1 className="boa">Seeds</h1>
             <div className="btn-country">
               <button
                 style={{

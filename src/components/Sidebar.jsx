@@ -19,9 +19,9 @@ const Sidebar = () => {
              <span> <FontAwesomeIcon icon={faWallet} className="fontawesome-sidebar"/></span>Seeds
             </NavLink>
           </li>
-          <li  id="adm">
-            <NavLink activeClassName="active" to="/dashboard/transitions">
-             <span> <FontAwesomeIcon icon={faRadio} className="fontawesome-sidebar"/></span>Transitions
+          <li  id="prof">
+            <NavLink activeClassName="active" to="/dashboard/transactions">
+             <span> <FontAwesomeIcon icon={faRadio} className="fontawesome-sidebar"/></span>Transactions
             </NavLink>
           </li>
           <li id="adm" >

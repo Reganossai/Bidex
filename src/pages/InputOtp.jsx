@@ -15,8 +15,7 @@ function InputOtp() {
           <div>
             <div className='mt-7 flex items-center justify-center flex-col '>
               <h1 className='text-black text-center font-bold mt-10 text-2xl'>
-                Input
-                <span
+                Input <span
                   className='pt-2'
                   style={{
                     width: "76px",
@@ -25,8 +24,7 @@ function InputOtp() {
                     border: "0",
                   }}>
                   OTP
-                </span>
-                Code
+                </span> Code
               </h1>
               <div className="mt-2">
                 <svg

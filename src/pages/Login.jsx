@@ -5,7 +5,7 @@ import google from "../assets/google.png"
 
 const Login = () => {
   const [email, setEmail] = useState("");
-  const [password, setpassword] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();

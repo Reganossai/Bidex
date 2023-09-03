@@ -18,7 +18,7 @@ const SeedsTable = () => {
                 <p>Nigerian Naira</p>
               </div>
             </td>
-            <td >
+            <td>
               <img src={arrow} className="arrow-home" alt="arrow" />
             </td>
             <td>
