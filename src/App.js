@@ -15,13 +15,17 @@ import ManageBanks from "./pages/ManageBanks";
 import Security from "./pages/Security";
 import Transactions from "./pages/Transactions";
 import Help from "./pages/Help";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/">
+        <Route exact path="/">
+            <LandingPage />
+          </Route>
+          <Route path="/login">
             <Login />
           </Route>
           <Route path="/register">

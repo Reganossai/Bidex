@@ -1536,6 +1536,12 @@
   border: 1px solid #1f5efa;
   border-radius: 40px;
 }
+.lando{
+  width: 90%;
+  margin: 0px 0px 0px 20px;
+  font-weight: 600;
+  
+}
 
 @media only screen and (max-width: 800px) {
   .zaracho {
@@ -1556,6 +1562,7 @@
     margin: 10px 0px 0px 40px;
   }
   
+
 
   #navbarSupportedContent {
     display: none;
@@ -1641,7 +1648,7 @@
   #headf-h3 {
     font-weight: 600;
     width: fit-content;
-    margin: 50px 0px 0px -100px;
+    margin: 50px 0px 0px -80px;
   }
 
 
@@ -1686,7 +1693,7 @@
   }
 
   .form-group {
-    margin: 20px 0px 5px 5px;
+    margin: 20px 0px 5px 0px;
   }
 
   .form-group label {
@@ -1698,7 +1705,7 @@
     padding: 10px 5px 10px 10px;
     border-radius: 17px;
     border: 1px solid lightblue;
-    width: 285px;
+    width: 90%;
     margin-top: 10px;
     cursor: pointer;
   }
@@ -1714,18 +1721,22 @@
 
 
   .form-groupp {
-    margin: 20px 0px 5px 5px;
+    margin: 20px 0px 5px 0px;
   }
 
   .form-groupp input {
-    width: 215px;
+    width: 70%;
     cursor: pointer;
   }
 
+
+  #vvv{
+    margin: 0px 0px 0px 18px;
+  }
   #log-btn {
     margin: 35px 0px 0px 15px;
     padding: 10px 0px 10px 0px;
-    width: 260px;
+    width: 85%;
     border-radius: 40px;
     background-color: rgb(31, 94, 250);
     color: white;
@@ -1735,14 +1746,14 @@
   #google-bt {
     margin: 35px 0px 0px 15px;
     padding: 10px 0px 10px 0px;
-    width: 260px;
+    width: 85%;
     border-radius: 40px;
     border: 1px solid black;
     cursor: pointer;
   }
 
   .kupa {
-    margin: 20px 0px 0px 20px;
+    margin: 20px 0px 0px 12px;
     font-size: 15px;
   }
 
@@ -1753,7 +1764,7 @@
 
   .forgot-pass {
     text-decoration: none;
-    margin: 20px 0px 0px 90px;
+    margin: 20px 0px 0px 70px;
   }
 
   .form-div h1 {
@@ -1834,7 +1845,7 @@
 
   .hir-orr {
     display: flex;
-    margin: 25px 0px 0px 10px;
+    margin: 25px 0px 0px -10px;
     width: 250px;
   }
 
@@ -2539,14 +2550,7 @@
     padding: 10px 0px 10px 4px;
   }
 
-  .form-group input {
-    padding: 10px 5px 10px 10px;
-    border-radius: 17px;
-    border: 1px solid lightblue;
-    width: 90%;
-    margin-top: 10px;
-  }
-
+  
   .form-groupp {
     margin: 20px 0px 5px 15px;
 
@@ -2557,14 +2561,7 @@
     padding: 10px 0px 10px 4px;
   }
 
-  .form-groupp input {
-    padding: 7px 5px 7px 10px;
-    border-radius: 17px;
-    border: 1px solid lightblue;
-    width: 70%;
-    margin: 0px 0px 0px 10px;
-  }
-
+  
   #add-account-bt {
     margin: 50px 0px 0px 25px;
     border-radius: 20px;

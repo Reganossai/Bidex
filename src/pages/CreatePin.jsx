@@ -13,7 +13,7 @@ function CreatePin() {
           action=''
           className="input-otp-form">
           <div className='mt-6'>
-            <div className="headff">
+            <div className="headf">
               <h1 >
                 Create
                 <span
@@ -34,6 +34,7 @@ function CreatePin() {
                 xmlns='http://www.w3.org/2000/svg'
                 width='77'
                 height='6'
+                id="vvv"
                 viewBox='0 0 77 6'
                 fill='none'>
                 <path

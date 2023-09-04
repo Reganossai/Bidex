@@ -81,6 +81,62 @@ const Navbar = () => {
         {nav ? (
           <div id="navbarSupportedContentMobile">
             <ul>
+            <li id="adm">
+                <NavLink activeClassName="active" to="/login">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faHouse}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  Login
+                </NavLink>
+              </li><li id="adm">
+                <NavLink activeClassName="active" to="/register">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faHouse}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  Register
+                </NavLink>
+              </li><li id="adm">
+                <NavLink activeClassName="active" to="/otp">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faHouse}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  Otp
+                </NavLink>
+              </li><li id="adm">
+                <NavLink activeClassName="active" to="/pin">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faHouse}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  Verfication
+                </NavLink>
+              </li><li id="adm">
+                <NavLink activeClassName="active" to="/forgot-password">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faHouse}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  forgot password
+                </NavLink>
+              </li>
               <li id="adm">
                 <NavLink activeClassName="active" to="/dashboard/home">
                   <span>

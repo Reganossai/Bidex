@@ -29,6 +29,7 @@ function InputOtp() {
                   xmlns="http://www.w3.org/2000/svg"
                   width="77"
                   height="6"
+                  id="vvv"
                   viewBox="0 0 77 6"
                   fill="none"
                 >
