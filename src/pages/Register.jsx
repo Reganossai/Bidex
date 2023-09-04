@@ -84,7 +84,7 @@ const Register = () => {
         <br />
 
         <div className="kupa">
-          <Link to="/register"><span className="kupa-span">Already Have An Account? </span> Login</Link>
+          <Link to="/"><span className="kupa-span">Already Have An Account? </span> Login</Link>
         </div>
       </form>
 

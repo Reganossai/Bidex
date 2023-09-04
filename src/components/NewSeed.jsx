@@ -1,5 +1,6 @@
-
 import React from "react";
+import usa from "../assets/usa.png";
+import naija from "../assets/nigeria.png";
 
 function NewSeed() {
   return (
@@ -20,7 +21,9 @@ function NewSeed() {
           <h2 className='px-3 my-1'>From</h2>
           <div className='seed-country-input px-3 flex justify-between items-center'>
             <div className='flex items-center justify-center'>
-              <div className='country-flag'></div>
+            <div className="country-icon mx-2">
+              <img src={usa} className="u-s-a-table" alt="usa" />
+            </div>
               <select
                 name='from-currency'
                 id='from-currency'
@@ -72,7 +75,9 @@ function NewSeed() {
           </div>
           <div className='seed-country-input px-3 flex justify-between items-center'>
             <div className='flex items-center justify-center'>
-              <div className='country-flag lightBlue'></div>
+            <div className="country-icon mx-2">
+              <img src={naija} className="u-s-a-table" alt="usa" />
+            </div>
               <select
                 name='from-currency'
                 id='from-currency'

@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import OngoingSeed from "../components/OngoingSeed";
 import NewSeed from "../components/NewSeed";
+import naija from "../assets/nigeria.png";
+import usa from "../assets/usa.png";
 
 const Seeds = () => {
   return (
@@ -13,29 +15,28 @@ const Seeds = () => {
         <div className="seed-container ">
           <div className="seed-container-sub">
             <h1 className="boa">Seeds</h1>
-            <div className="btn-country">
-              <button
-                style={{
-                  backgroundColor: "#194bc8",
-                }}
-              >
-                <h3 className="icon">🌍</h3>
-                <h3 className="white-currency">NGN</h3>
-              </button>
-              <button
-                style={{
-                  backgroundColor: "#EAEAEA",
-                }}
-              >
-                <h3 className="icon">🌍</h3>
-                <h3>USA</h3>
-              </button>
-            </div>
+            <div className="naija-usa">
+            <button id="naija-bt" className="btn btn-primary">
+              <img src={naija} className="nj" alt="naija" />
+              <span>
+                <h1>NGN</h1>
+              </span>
+            </button>
+            <button id="usa-bt" className="btn btn-primary">
+              <img src={usa} className="u-s-a" alt="usa" />
+              <span>
+                <h1>USD</h1>
+              </span>
+            </button>
+          </div>
             {/* Ongoing seed */}
             <OngoingSeed />
           </div>
           {/* NewSeed */}
+          <div className="seed-seed">
           <NewSeed />
+          </div>
+          
         </div>
       </div>
     </div>

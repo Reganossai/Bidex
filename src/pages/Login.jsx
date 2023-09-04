@@ -56,10 +56,10 @@ const Login = () => {
       </form>
 
       
-      <div className="hir-or">
-        <hr className="hir"/>
-        <p className="hir-pee">or</p>
-        <hr className="hir"/>
+      <div className="hir-orr">
+        <hr className="hirr"/>
+        <p className="hir-peee">or</p>
+        <hr className="hirrr"/>
       </div>
 
       <button id="google-bt" ><Link><span className="google-sub"><img src={google} className="google" alt="google"/></span> Continue with Google</Link></button>

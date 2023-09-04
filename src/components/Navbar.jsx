@@ -4,15 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faXmark,
   faBars,
-  faMagnifyingGlass,
-  faBell,
+  faMagnifyingGlass,  
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faChartSimple,
-  faGraduationCap,
-  faUserPen,
-} from "@fortawesome/free-solid-svg-icons";
-import { useCallback } from "react";
+import {   faGear, faHouse, faRadio, faRightFromBracket, faWallet } from "@fortawesome/free-solid-svg-icons";
+import { faCommentDots, faUser } from "@fortawesome/free-regular-svg-icons";
 import { useHistory } from "react-router-dom";
 import bidex from "../assets/Bidex.png";
 import bell from "../assets/bell.png";
@@ -36,7 +31,7 @@ const Navbar = () => {
   return (
     <div className="nav-usa">
       <nav className="navbar navbar-expand-lg">
-        <Link to="#">
+        <Link to="/dashboard/home">
           <img src={bidex} className="logoo" alt="logoo" />
         </Link>
 
@@ -80,68 +75,108 @@ const Navbar = () => {
                 Log out
               </button>
             </li> */}
-
-            <div onClick={handleNav} className="zaracho">
-              {nav ? (
-                <FontAwesomeIcon icon={faXmark} />
-              ) : (
-                <FontAwesomeIcon icon={faBars} />
-              )}
-            </div>
           </ul>
+        </div>
 
-          {nav ? (
-            <div id="navbarSupportedContentMobile">
-              <ul>
-                <li id="dash">
-                  <NavLink activeClassName="active" to="/dashboard">
-                    <span>
-                      {" "}
-                      <FontAwesomeIcon
-                        icon={faChartSimple}
-                        className="fontawesome-sidebar"
-                      />
-                    </span>{" "}
-                    Dashboard
-                  </NavLink>
-                </li>
-                <hr className="hop" />
-                <li id="adm">
-                  <NavLink activeClassName="active" to="#">
-                    <span>
-                      {" "}
-                      <FontAwesomeIcon
-                        icon={faGraduationCap}
-                        className="fontawesome-sidebar"
-                      />
-                    </span>{" "}
-                    Admission
-                  </NavLink>
-                </li>
-
-                <hr className="hop" />
-                <li id="prof">
-                  <NavLink activeClassName="active" to="#">
-                    <span>
-                      {" "}
-                      <FontAwesomeIcon
-                        icon={faUserPen}
-                        className="fontawesome-sidebar"
-                      />
-                    </span>{" "}
-                    Profile
-                  </NavLink>
-                </li>
-
-                <hr className="hop" />
-                {/* <li>
+        {nav ? (
+          <div id="navbarSupportedContentMobile">
+            <ul>
+              <li id="adm">
+                <NavLink activeClassName="active" to="/dashboard/home">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faHouse}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  Home
+                </NavLink>
+              </li>
+              <li id="adm">
+                <NavLink activeClassName="active" to="/dashboard/seeds">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faWallet}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  Seeds
+                </NavLink>
+              </li>
+              <li id="prof">
+                <NavLink activeClassName="active" to="/dashboard/transactions">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faRadio}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  Transactions
+                </NavLink>
+              </li>
+              <li id="adm">
+                <NavLink activeClassName="active" to="/dashboard/messages">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faCommentDots}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  Messages
+                </NavLink>
+              </li>
+              <li id="prof">
+                <NavLink activeClassName="active" to="/dashboard/account">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faUser}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  My Account
+                </NavLink>
+              </li>
+              <li id="adm">
+                <NavLink activeClassName="active" to="/dashboard/settings">
+                  <span>
+                    {" "}
+                    <FontAwesomeIcon
+                      icon={faGear}
+                      className="fontawesome-sidebar"
+                    />
+                  </span>
+                  Settings
+                </NavLink>
+              </li>
+              <li id="lion">
+                <button>
+                  <FontAwesomeIcon
+                    icon={faRightFromBracket}
+                    className="fontawesome-sidebar"
+                  />
+                  Logout
+                </button>
+              </li>
+              {/* <li>
                   <button onClick={handleLogout} className="btn btn-danger">
                     Logout
                   </button>
                 </li> */}
-              </ul>
-            </div>
-          ) : null}
+            </ul>
+          </div>
+        ) : null}
+
+        <div onClick={handleNav} className="zaracho">
+          {nav ? (
+            <FontAwesomeIcon icon={faXmark} />
+          ) : (
+            <FontAwesomeIcon icon={faBars} />
+          )}
         </div>
       </nav>
     </div>

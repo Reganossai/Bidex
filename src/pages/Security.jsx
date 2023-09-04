@@ -3,11 +3,18 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Menu from "../components/Menu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExclamationCircle, faLock } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowLeftLong,
+  faExclamationCircle,
+  faLock,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import PinInput from "../components/PinInput";
+import OTPInput from "../components/OTPInput";
 
 const Security = () => {
   const [isEditingChangePassword, setIsEditingChangePassword] = useState(false);
+  const [isEditingChangePin, setIsEditingChangePin] = useState(false);
   const [password, setPassword] = useState("");
   const [newpassword, setNewpassword] = useState("");
   const [confirmpassword, setConfirmpassword] = useState("");
@@ -16,9 +23,22 @@ const Security = () => {
     setIsEditingChangePassword(true);
   };
 
-  const Save = () =>{
+  const handleChangePinClick = () => {
+    setIsEditingChangePin(true);
+  };
+
+  const savePassword = () => {
     setIsEditingChangePassword(false);
-  }
+  };
+
+  const savePin = () => {
+    setIsEditingChangePin(false);
+  };
+
+  const handleGoBack = () => {
+    setIsEditingChangePassword(false);
+    setIsEditingChangePin(false);
+  };
   return (
     <div>
       <Navbar />
@@ -28,8 +48,10 @@ const Security = () => {
           <h1 className="settings-header">Settings</h1>
           <Menu />
           <div className="pin-pass">
-            <FontAwesomeIcon icon={faLock} className="fag" />
-            Change Pin
+            <button onClick={handleChangePinClick}>
+              <FontAwesomeIcon icon={faLock} className="fag" />
+              Change Pin
+            </button>
           </div>
           <div className="pin-pass">
             <button onClick={handleChangePasswordClick}>
@@ -37,11 +59,88 @@ const Security = () => {
               Change Password
             </button>
           </div>
+          {isEditingChangePin ? (
+            <div className="ovrl-sub-security-change-password-popup">
+              <form onSubmit={savePin} className="input-otp-form">
+                <h1>
+                  <button>
+                    <FontAwesomeIcon
+                      icon={faArrowLeftLong}
+                      className="font-back"
+                      onClick={handleGoBack}
+                    />
+                  </button>
+                </h1>
+                <div className="boxx">
+                  <div id="bmp" className="flex items-center justify-center flex-col">
+                    <h2 className="pin-header my-4">Enter Current Pin</h2>
+                    <div className="para">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="78"
+                        height="6"
+                        viewBox="0 0 78 6"
+                        fill="none"
+                      >
+                        <path
+                          d="M3 3H75"
+                          stroke="#1F5EFA"
+                          stroke-opacity="0.75"
+                          stroke-width="5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="testt">
+                    <OTPInput length={4} />
+                  </div>
+                </div>
+                <div className="boxx">
+                  <div id="bmp" className="flex items-center justify-center flex-col">
+                    <h2 className="pin-header my-4">Enter New Pin</h2>
+                    <div className="para">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="78"
+                        height="6"
+                        viewBox="0 0 78 6"
+                        fill="none"
+                      >
+                        <path
+                          d="M3 3H75"
+                          stroke="#1F5EFA"
+                          stroke-opacity="0.75"
+                          stroke-width="5"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="testt">
+                    <OTPInput length={4} />
+                  </div>
+                </div>
+                <button id="liop" className="btn btn-primary">
+                  Continue
+                </button>
+              </form>
+            </div>
+          ) : null}
           {isEditingChangePassword ? (
-             <div className="ovrl-sub-security-change-password-popup">
-             <h1 className="settings-header">Change Password</h1>
-             <p>Create your login password</p>
-              <form onSubmit={Save}>
+            <div className="ovrl-sub-security-change-password-popup">
+              <h1>
+                <button>
+                  <FontAwesomeIcon
+                    icon={faArrowLeftLong}
+                    className="font-back"
+                    onClick={handleGoBack}
+                  />
+                </button>
+              </h1>
+              <h1 className="settings-header">Change Password</h1>
+              <p>Create your login password</p>
+              <form onSubmit={savePassword}>
                 <div className="form-group">
                   <label for="fullname">Enter Current Password</label>
                   <input
@@ -74,7 +173,13 @@ const Security = () => {
                   />
                 </div>
 
-                <button type="submit" className="btn btn-primary"  id="change-pass-bt">Change Password</button>
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  id="change-pass-bt"
+                >
+                  Change Password
+                </button>
               </form>
             </div>
           ) : null}

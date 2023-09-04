@@ -48,22 +48,22 @@ function TransactionTable() {
         </div>
       </div>
 
-      <table id="tbb" class="table table-striped">
+      <table id="tbb" >
         <thead>
           <tr>
-            <th scope="col"></th>
-            <th scope="col">Date</th>
-            <th scope="col">Description</th>
-            <th scope="col">Amount</th>
-            <th scope="col">To/From</th>
-            <th scope="col">Status</th>
+            <th ></th>
+            <th className="raty" >Date</th>
+            <th className="raty" >Description</th>
+            <th className="raty" >Amount</th>
+            <th className="raty" >To/From</th>
+            <th className="raty" >Status</th>
           </tr>
         </thead>
         <tbody>
           <tr className="light-blue">
-            <th className="rod" scope="row">
-              <img src={svg} className="u-s-a-table" alt="usa" />
-            </th>
+            <td className="daty" >
+              <img src={svg} alt="usa" />
+            </td>
             <td className="daty">
               <p>28/10/2023</p>
             </td>
@@ -80,9 +80,9 @@ function TransactionTable() {
           </tr>
 
           <tr className="dark-blue">
-            <th className="rod" scope="row">
-              <img src={svg} className="u-s-a-table" alt="usa" />
-            </th>
+            <td className="daty" >
+              <img src={svg} alt="usa" />
+            </td>
             <td className="daty">
               <p>28/10/2023</p>
             </td>
@@ -99,9 +99,9 @@ function TransactionTable() {
           </tr>
 
           <tr className="light-blue">
-            <th className="rod" scope="row">
-              <img src={svg} className="u-s-a-table" alt="usa" />
-            </th>
+            <td className="daty">
+              <img src={svg}  alt="usa" />
+            </td>
             <td className="daty">
               <p>28/10/2023</p>
             </td>
@@ -118,9 +118,9 @@ function TransactionTable() {
           </tr>
 
           <tr className="dark-blue">
-            <th className="rod" scope="row">
-              <img src={svg} className="u-s-a-table" alt="usa" />
-            </th>
+            <td className="daty">
+              <img src={svg} alt="usa" />
+            </td>
             <td className="daty">
               <p>28/10/2023</p>
             </td>
@@ -137,9 +137,9 @@ function TransactionTable() {
           </tr>
 
           <tr className="dark-blue">
-            <th className="rod" scope="row">
-              <img src={svg} className="u-s-a-table" alt="usa" />
-            </th>
+            <td className="daty">
+              <img src={svg} alt="usa" />
+            </td>
             <td className="daty">
               <p>28/10/2023</p>
             </td>
@@ -156,9 +156,9 @@ function TransactionTable() {
           </tr>
 
           <tr className="dark-blue">
-            <th className="rod" scope="row">
-              <img src={svg} className="u-s-a-table" alt="usa" />
-            </th>
+            <td className="daty">
+              <img src={svg} alt="usa" />
+            </td>
             <td className="daty">
               <p>28/10/2023</p>
             </td>
@@ -175,9 +175,9 @@ function TransactionTable() {
           </tr>
 
           <tr className="dark-blue">
-            <th className="rod" scope="row">
-              <img src={svg} className="u-s-a-table" alt="usa" />
-            </th>
+            <td className="daty">
+              <img src={svg}  alt="usa" />
+            </td>
             <td className="daty">
               <p>28/10/2023</p>
             </td>

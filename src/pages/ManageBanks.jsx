@@ -1,4 +1,4 @@
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeftLong, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
@@ -11,6 +11,10 @@ const ManageBanks = () => {
   const handleAddAccountClick = () => {
     setAddAccount(true);
   };
+
+  const handleGoBack = () => {
+    setAddAccount(false);
+  }
   return (
     <div>
       <Navbar />
@@ -35,7 +39,8 @@ const ManageBanks = () => {
             <h3>Guaranty Trust Bank</h3>
           </div>
           {addAccount ? (
-            <div className="bank-account">
+            <div className="ovrl-sub-security-change-password-popup">
+               <h1><button><FontAwesomeIcon icon={faArrowLeftLong} className="font-back-account" onClick={handleGoBack}/></button></h1>
               <form action="" onSubmit={(e) => e.preventDefault()}>
                 <div className="bank-account-container">
                   <h2 className="boa">Add Bank Account</h2>

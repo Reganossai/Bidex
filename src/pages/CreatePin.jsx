@@ -6,15 +6,15 @@ import ImageForm from "../components/ImageForm";
 import OTPInput from "../components/OTPInput";
 function CreatePin() {
   return (
-    <div className='m-0 p-0 flex items-center  justify-between'>
+    <div id="box-container" className='m-0 p-0 flex items-center  justify-between'>
       <ImageForm />
-      <div className=''>
+      <div className='box'>
         <form
           action=''
-          className='p-8 mt-8 mr-20 flex flex-col items-center text-center justify-center md:p-3'>
+          className="input-otp-form">
           <div className='mt-6'>
-            <div className='flex items-center justify-center flex-col text-center'>
-              <h1 className='text-black mt-8 font-bold text-2xl'>
+            <div className="headff">
+              <h1 >
                 Create
                 <span
                   className='pt-2'
@@ -26,7 +26,7 @@ function CreatePin() {
                     
                   }}>
                   Pin
-                </span>{" "}
+                </span>
                 Code
               </h1>
              <div className="mt-3">
@@ -46,39 +46,28 @@ function CreatePin() {
               </svg>
              </div>
             </div>
-            <h2
-              style={{
-                color: "#1F1F1F",
-                width: "342px",
-                fontSize: "14px",
-              }}
-              className='text-center m-2 mt-4'>
+            <h2>
               Please enter the OTP sent to your account so we can verify your
-              account{" "}
+              account
             </h2>
             {/* blocks */}
+            <div className="test">
             <OTPInput length={4} />
-            <h3 className='my-4 cursor-pointer'>
-              Didn't receive a code ?{" "}
+            </div>
+            <h3 id="headf-h3" className='my-4 cursor-pointer'>
+              Didn't receive a code ?
               <span
                 style={{
                   color: "#1F5EFA",
                 }}>
                 Resend
-              </span>{" "}
+              </span>
             </h3>
           </div>
           <div>
             <button
-              style={{
-                backgroundColor: "#1F5EFA",
-                borderRadius: "30px",
-                height: "48px",
-                marginTop: "145px",
-
-                width: "398px",
-              }}
-              className='p-4  flex items-center justify-center text-center  text-white'>
+              id="otp-btn"
+              className='btn btn-primary'>
               Continue
             </button>
           </div>

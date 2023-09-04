@@ -10,8 +10,8 @@ function PinSuccess() {
     <div className='m-0 p-0 flex items-center  justify-between'>
       <ImageForm />
 
-      <div className='flex flex-col items-center justify-center mt-16 md:mt-0'>
-        <div className='relative mb-16 mr-32'>
+      <div id="tot" className='flex flex-col items-center justify-center mt-16 md:mt-0'>
+        <div id="created" className='relative mb-16 mr-32'>
           <div>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -77,18 +77,17 @@ function PinSuccess() {
         </div>
 
         <div className='mr-20 my-16 flex items-center justify-center flex-col text-center md:mr-28'>
-          <h1 className='text-black font-bold text-2xl'>
-            Pin{" "}
+          <h1 id="hijj" className='text-black font-bold text-2xl'>
+            Pin
             <span
               className='pt-2'
               style={{
                 width: "76px",
-
                 height: "0px",
                 border: "0",
+                margin:"0px 0px 0px 6px"
               }}>
-              Created
-            </span>{" "}
+              Created </span>
             Successfully
           </h1>
           <div className='my-2'>
@@ -109,9 +108,12 @@ function PinSuccess() {
           </div>
           <small
             style={{
-              width: "342px",
+              width: "350px",
               color: "#334155",
-              fontWeight: "400px",
+              fontWeight: "500",
+              marginLeft:"10px",
+              fontSize:"13px",
+              paddingLeft:"40px",
             }}>
             Congratulations, your Pin has been created successfully! You can now
             easily sign in to your account
