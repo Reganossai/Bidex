@@ -11,6 +11,7 @@ import { faCommentDots, faUser } from "@fortawesome/free-regular-svg-icons";
 import { useHistory } from "react-router-dom";
 import bidex from "../assets/Bidex.png";
 import bell from "../assets/bell.png";
+import user from "../assets/reagan.jpg";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -63,7 +64,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <h6>jkl</h6>
+              <img src={user} className="reg" alt="logoo" />
             </li>
 
             {/* <li>
