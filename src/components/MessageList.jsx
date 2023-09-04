@@ -3,7 +3,7 @@ import React from "react";
 
 function MessageList() {
   return (
-    <div>
+    <div className="nmm">
       <div className='message-list'>
         <div className='message-info'>
           <div className='message-icon'></div>

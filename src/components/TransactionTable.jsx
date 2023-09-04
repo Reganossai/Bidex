@@ -51,7 +51,7 @@ function TransactionTable() {
       <table id="tbb" >
         <thead>
           <tr>
-            <th ></th>
+            <th className="raty" ></th>
             <th className="raty" >Date</th>
             <th className="raty" >Description</th>
             <th className="raty" >Amount</th>

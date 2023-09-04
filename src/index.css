@@ -1225,7 +1225,7 @@
   padding: 0px 0px;
 }
 
-.messages-back{
+.messages-back {
   display: none;
 }
 
@@ -1536,23 +1536,26 @@
   border: 1px solid #1f5efa;
   border-radius: 40px;
 }
-.lando{
+
+.lando {
   width: 90%;
   margin: 0px 0px 0px 20px;
   font-weight: 600;
 
 }
 
-.zaracho{
+.zaracho {
   display: none;
 }
 
-.reg{
+.reg {
   width: 50px;
   height: 50px;
   margin: 0px 0px 0px 15px;
   border-radius: 30px;
 }
+
+
 
 @media only screen and (max-width: 800px) {
   .zaracho {
@@ -1572,7 +1575,8 @@
     width: 100px;
     margin: 10px 0px 0px 40px;
   }
-  
+
+
 
 
   #navbarSupportedContent {
@@ -1606,7 +1610,7 @@
 
   #navbarSupportedContentMobile li {
     list-style-type: none;
-    margin-top: 20px;
+    margin-top: 0px;
     color: black;
   }
 
@@ -1741,9 +1745,10 @@
   }
 
 
-  #vvv{
+  #vvv {
     margin: 0px 0px 0px 18px;
   }
+
   #log-btn {
     margin: 35px 0px 0px 15px;
     padding: 10px 0px 10px 0px;
@@ -1786,8 +1791,8 @@
   }
 
   .terms {
-    margin: 20px 0px 0px 5px;
-    width: 300px;
+    margin: 20px 0px 0px 10px;
+    width: 98%;
   }
 
   .login-div {
@@ -1806,7 +1811,8 @@
     max-width: 100%;
     max-height: 200vh;
     overflow-y: scroll;
-    padding-bottom: 80px;
+    padding-top: 18px;
+    padding-bottom: 100px;
     background-color: #F0FFFF;
   }
 
@@ -1823,9 +1829,9 @@
   }
 
   .form-div h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
-    margin: 0px 0px 20px 20px;
+    margin: 0px 0px 20px 35px;
   }
 
   .form-div p {
@@ -1837,9 +1843,9 @@
   }
 
   #for-btn {
-    margin: 35px 0px 0px 15px;
-    padding: 10px 0px 10px 0px;
-    width: 260px;
+    margin: 35px 0px 0px 10px;
+    padding: 5px 0px 5px 0px;
+    width: 90%;
     border-radius: 40px;
     color: white;
 
@@ -2443,10 +2449,11 @@
   }
 
 
-  .raty p {
-    font-size: 8px;
-    margin-left: 10px;
-    margin-right: 10px;
+  .raty {
+    font-size: 9px;
+    padding-left: 20px;
+    margin-right: 0px;
+    width: 10px;
   }
 
 
@@ -2561,7 +2568,7 @@
     padding: 10px 0px 10px 4px;
   }
 
-  
+
   .form-groupp {
     margin: 20px 0px 5px 15px;
 
@@ -2572,7 +2579,7 @@
     padding: 10px 0px 10px 4px;
   }
 
-  
+
   #add-account-bt {
     margin: 50px 0px 0px 25px;
     border-radius: 20px;
@@ -2778,9 +2785,9 @@
     display: flex;
     width: 300px;
     height: 56px;
-    
-    
-  
+
+
+
   }
 
   .message-info {
@@ -2803,7 +2810,7 @@
     border: 0.5px solid #194bc8;
   }
 
-  #wasss{
+  #wasss {
     margin: -30px -30px 0px 0px;
 
   }
@@ -2841,6 +2848,7 @@
     font-weight: 400;
     line-height: 16px;
     width: 30px;
+    
   }
 
   /* .message-logo {
@@ -2866,11 +2874,11 @@
     overflow-x: hidden;
   }
 
-  .messages-back{
+  .messages-back {
     display: block;
     font-size: 25px;
     font-weight: 700;
-    margin: 0px 20px 0px 10px ;
+    margin: 0px 20px 0px 10px;
   }
 
   .message-person-info {
@@ -2945,7 +2953,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  
+
   }
 
   /* .sender-message{
@@ -2988,11 +2996,11 @@
     bottom: 50px;
   }
 
-  #down-down{
+  #down-down {
     display: none;
   }
 
-  #messa{
+  #messa {
     width: 100%;
   }
 
