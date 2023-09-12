@@ -27,24 +27,25 @@ const Messages = () => {
           <div className="messages">
             <div className="message-records">
               <div>
-                <h1 className="message-logo">Messages</h1>
+              <h1 className="settings-header">Messages</h1>
               </div>
 
               <div className="message-list" >
                 <div className="message-info">
                   <button onClick={handleNameClicked}>
                   <div className="message-icon"></div>
-                  <div id="wasss" className="name-message mx-3">
+                  <div id="wasss" >
                     <h1 className="message-name">Pranav Ray</h1>
                     <h2 className="message-content">
                       Okay please hold on while i confirm
                     </h2>
                   </div>
-                  </button>
-                </div>
-                <div>
+                   <div>
                   <h3 className="time-message">5 min</h3>
                 </div>
+                  </button>
+                </div>
+               
               </div>
             </div>
 

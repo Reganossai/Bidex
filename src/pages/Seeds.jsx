@@ -14,7 +14,7 @@ const Seeds = () => {
       <div className="ovrl">
         <div className="seed-container ">
           <div className="seed-container-sub">
-            <h1 className="boa">Seeds</h1>
+          <h1 className="settings-header">Settings</h1>
             <div className="naija-usa">
             <button id="naija-bt" className="btn btn-primary">
               <img src={naija} className="nj" alt="naija" />

@@ -10,9 +10,7 @@ const Transactions = () => {
         <Sidebar/>
         <div className='ovrl'>
           <div className='ovrl-sub'>
-          <h1 id="trans-head" className='text-black font-bold transaction-logo bidex-header'>
-            Transactions
-          </h1>
+          <h1 className="settings-header">Transactions</h1>
           <TransactionTable/>
         </div>
       </div>

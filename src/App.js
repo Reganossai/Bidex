@@ -16,6 +16,9 @@ import Security from "./pages/Security";
 import Transactions from "./pages/Transactions";
 import Help from "./pages/Help";
 import LandingPage from "./pages/LandingPage";
+import Verifyaccount from "./pages/Verifyaccount";
+import Verifybvn from "./pages/Verifybvn";
+import Securityhome from "./pages/Securityhome";
 
 function App() {
   return (
@@ -58,8 +61,17 @@ function App() {
           <Route exact path="/dashboard/settings/security">
             <Security/>
           </Route>
+          <Route exact path="/dashboard/settings/security/home">
+            <Securityhome/>
+          </Route>
           <Route exact path="/dashboard/settings/help-and-support">
             <Help/>
+          </Route>
+          <Route exact path="/dashboard/settings/security/verify-account">
+            <Verifyaccount/>
+          </Route>
+          <Route exact path="/dashboard/settings/verify-bvn">
+            <Verifybvn/>
           </Route>
           <Route path="/forgot-password">
             <Forgotpassword />

@@ -376,7 +376,7 @@
 
 .sidebar-div {
   background-color: #194BC8;
-  height: 140vh;
+  height: 150vh;
 }
 
 .sidebar-div ul {
@@ -419,7 +419,7 @@
   top: 90px;
   left: 200px;
   width: 1149px;
-  height: 142vh;
+  height: 151vh;
   background-color: #FFFFFF;
   border-radius: 20px;
   padding-bottom: 40px;
@@ -653,8 +653,7 @@
 
 /* HOME */
 .ovrl-sub {
-  margin: 70px 0px 0px 30px;
-  height: fit-content;
+  margin: 30px 0px 0px 30px;
   padding-bottom: 40px;
 }
 
@@ -1094,6 +1093,16 @@
   margin: 0px 0px 50px 0px;
 }
 
+.settings-menuu {
+  display: flex;
+  background-color: #F0FFFF;
+  border-radius: 30px;
+  color: black;
+  width: 400px;
+  height: 49px;
+  margin: 0px 0px 20px 0px;
+}
+
 .settings-menu .active {
   background-color: #194BC8;
   color: white;
@@ -1102,7 +1111,24 @@
   border-radius: 20px;
 }
 
+
+.settings-menuu .active {
+  background-color:	#6495ED;
+  color: black;
+  padding: 10px 15px 0px 15px;
+  font-size: 13px;
+  border-radius: 20px;
+}
+
 #menu-links {
+  margin: 10px 15px 0px 25px;
+  font-weight: 600;
+  width: fit-content;
+
+}
+
+
+#menu-linkss {
   margin: 10px 15px 0px 25px;
   font-weight: 600;
   width: fit-content;
@@ -1191,7 +1217,26 @@
   margin: 0px 0px 0px 0px;
 }
 
+.upload-photo{
+  border: 1px solid #1dc1a9;
+  width: 200px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 30px;
+  
+}
 
+.take-photo{
+  border: 1px solid #1dc1a9;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 19px;
+}
+
+.take-upload-photo{
+  display: flex;
+  margin-top: 20px;
+}
 .boxx {
   margin: 0px 0px 0px 100px;
 }
@@ -1275,16 +1320,20 @@
 
 .message-list {
   display: flex;
-  width: 400px;
+  width: 1000px;
   height: 56px;
   margin-top: 0px 10px;
   justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.message-info {
-  display: flex;
-  justify-content: space-between;
+#wasss {
+  margin: -40px 100px 0px 100px;
+
 }
+
+
+
 
 .name-message {
   display: flex;
@@ -1293,7 +1342,7 @@
 
 .message-icon {
   width: 35px;
-  margin-top: 4px;
+  margin: 4px 10px 0px 0px;
   height: 35px;
   border-radius: 35px;
   border: 0.5px solid #194bc8;
@@ -1321,8 +1370,8 @@
 
 .time-message {
   color: #000;
-  text-align: center;
-  margin-top: 15px;
+  
+  
   /* text-xs Medium */
   font-family: Satoshi;
   font-size: 12px;
@@ -1554,6 +1603,7 @@
   margin: 0px 0px 0px 15px;
   border-radius: 30px;
 }
+
 
 
 
@@ -2811,7 +2861,7 @@
   }
 
   #wasss {
-    margin: -30px -30px 0px 0px;
+    margin: -30px 30px 0px 0px;
 
   }
 
@@ -2848,7 +2898,7 @@
     font-weight: 400;
     line-height: 16px;
     width: 30px;
-    
+
   }
 
   /* .message-logo {

@@ -13,7 +13,7 @@ import PinInput from "../components/PinInput";
 import OTPInput from "../components/OTPInput";
 import Menuu from "../components/Menuu";
 
-const Security = () => {
+const Verifybvn = () => {
   const [isEditingChangePassword, setIsEditingChangePassword] = useState(false);
   const [isEditingChangePin, setIsEditingChangePin] = useState(false);
   const [password, setPassword] = useState("");
@@ -191,4 +191,4 @@ const Security = () => {
   );
 };
 
-export default Security;
+export default Verifybvn;
