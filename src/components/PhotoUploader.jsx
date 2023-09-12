@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import Webcam from "react-webcam";
 import Dropzone from "react-dropzone";
+import Camera from "react-html5-camera-photo";
+import "react-html5-camera-photo/build/css/index.css";
 
 const PhotoUploader = () => {
-  const [webcamEnabled, setWebcamEnabled] = useState(false);
+  const [htmlCamera, setHtmlCamera] = useState(false);
   const [photo, setPhoto] = useState(null);
 
   const webcamRef = React.useRef(null);
 
   const handleStartWebcam = () => {
-    setWebcamEnabled(true);
+    setHtmlCamera(true);
   };
 
-  const handleCapturePhoto = () => {
-    const imageSrc = webcamRef.current.getScreenshot();
-    setPhoto(imageSrc);
-    setWebcamEnabled(false);
+  const handleTakePhoto = (dataUri) => {
+    setPhoto(dataUri);
+    setHtmlCamera(false);
   };
 
   const handleDrop = (acceptedFiles) => {
@@ -25,41 +26,34 @@ const PhotoUploader = () => {
   };
 
   return (
-    <div>
-      {webcamEnabled ? (
+    <div className="take-upload-photo">
+      {photo && (
         <div>
-          <Webcam
-            audio={false}
-            ref={webcamRef}
-            screenshotFormat="image/jpeg"
-            onUserMediaError={(error) => console.error("Webcam error:", error)}
-          />
-          <button onClick={handleCapturePhoto}>Capture Photo</button>
-        </div>
-      ) : (
-        <div className="take-upload-photo">
-          {photo && (
-            <div>
-              <h2>Selected Photo:</h2>
-              <img src={photo} alt="Selected" style={{ maxWidth: "10%" }} />
-            </div>
-          )}
-          {!photo && (
-            <button className="take-photo" onClick={handleStartWebcam}>
-              Take ID photo
-            </button>
-          )}
-
-          <Dropzone onDrop={handleDrop}>
-            {({ getRootProps, getInputProps }) => (
-              <div {...getRootProps()} style={dropzoneStyles}>
-                <input {...getInputProps()} />
-                <p className="upload-photo">Upload ID image</p>
-              </div>
-            )}
-          </Dropzone>
+          <h2>Selected Photo:</h2>
+          <img src={photo} alt="Selected" style={{ maxWidth: "10%" }} />
         </div>
       )}
+      {!photo && (
+        <button className="take-photo" onClick={handleStartWebcam}>
+          Take ID photo
+        </button>
+      )}
+      {htmlCamera ? (
+        <Camera
+          onTakePhoto={(dataUri) => {
+            handleTakePhoto(dataUri);
+          }}
+        />
+      ) : null}
+
+      <Dropzone onDrop={handleDrop}>
+        {({ getRootProps, getInputProps }) => (
+          <div {...getRootProps()} style={dropzoneStyles}>
+            <input {...getInputProps()} />
+            <p className="upload-photo">Upload ID image</p>
+          </div>
+        )}
+      </Dropzone>
     </div>
   );
 };
