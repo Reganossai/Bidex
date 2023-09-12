@@ -51,6 +51,11 @@ const PhotoUploader = () => {
              }}
            />
           )}
+            <Camera
+            onTakePhoto={(dataUri) => {
+              handleTakePhoto(dataUri);
+            }}
+          />
 
           <Dropzone onDrop={handleDrop}>
             {({ getRootProps, getInputProps }) => (
