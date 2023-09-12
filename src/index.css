@@ -1235,7 +1235,9 @@
 
 .take-upload-photo{
   display: flex;
+  flex-direction: column;
   margin-top: 20px;
+  width: 300px;
 }
 .boxx {
   margin: 0px 0px 0px 100px;
@@ -1378,6 +1380,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
+}
+
+.emerency{
+  position: absolute;
+  top: 600px;
+  width: 200px;
+  right: 300px;
 }
 
 .message-logo {

@@ -61,7 +61,10 @@ const Verifyaccount = () => {
             <div className="form-group">
               <label htmlFor="idNumber">Upload a photo of your ID</label>
               <p>Ensure the ID number is clearly visible on the photo and the photo is not cropped</p>
-            <PhotoUploader/>
+              <div className="emerency">
+              <PhotoUploader/>
+              </div>
+            
             </div>
             <button className="btn btn-primary" id="olali">Submit</button>
           </form>
