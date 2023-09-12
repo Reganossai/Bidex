@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Webcam from 'react-webcam';
 import Dropzone from 'react-dropzone';
 import Camera from "react-html5-camera-photo";
+import "react-html5-camera-photo/build/css/index.css";
 
 const PhotoUploader = () => {
   const [webcamEnabled, setWebcamEnabled] = useState(false);
@@ -33,6 +34,7 @@ const PhotoUploader = () => {
               handleTakePhoto(dataUri);
             }}
           />
+ 
         </div>
       ) : (
         <div className='take-upload-photo'>
