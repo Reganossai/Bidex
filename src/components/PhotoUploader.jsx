@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Webcam from "react-webcam";
 import Dropzone from "react-dropzone";
-import Camera from "react-html5-camera-photo";
-import "react-html5-camera-photo/build/css/index.css";
 
 const PhotoUploader = () => {
   const [webcamEnabled, setWebcamEnabled] = useState(false);
@@ -14,8 +12,9 @@ const PhotoUploader = () => {
     setWebcamEnabled(true);
   };
 
-  const handleTakePhoto = (dataUri) => {
-    setPhoto(dataUri);
+  const handleCapturePhoto = () => {
+    const imageSrc = webcamRef.current.getScreenshot();
+    setPhoto(imageSrc);
     setWebcamEnabled(false);
   };
 
@@ -29,12 +28,13 @@ const PhotoUploader = () => {
     <div>
       {webcamEnabled ? (
         <div>
-        <Camera
-             onTakePhoto={(dataUri) => {
-               handleTakePhoto(dataUri);
-             }}
-           />
-          <button onClick={handleTakePhoto}>Capture Photo</button>
+          <Webcam
+            audio={false}
+            ref={webcamRef}
+            screenshotFormat="image/jpeg"
+            onUserMediaError={(error) => console.error("Webcam error:", error)}
+          />
+          <button onClick={handleCapturePhoto}>Capture Photo</button>
         </div>
       ) : (
         <div className="take-upload-photo">
@@ -45,11 +45,9 @@ const PhotoUploader = () => {
             </div>
           )}
           {!photo && (
-             <Camera
-             onTakePhoto={(dataUri) => {
-               handleTakePhoto(dataUri);
-             }}
-           />
+            <button className="take-photo" onClick={handleStartWebcam}>
+              Take ID photo
+            </button>
           )}
 
           <Dropzone onDrop={handleDrop}>
