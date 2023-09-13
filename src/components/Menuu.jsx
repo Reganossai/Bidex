@@ -17,7 +17,7 @@ const Menuu = () => {
         Verify Account
         </NavLink>
 
-        <NavLink id="menu-linkss" activeClassName="active" to="/dashboard/settings/verify-bvn">
+        <NavLink id="menu-linkss" activeClassName="active" to="/dashboard/settings/security/verify-bvn">
        Verify BVN
         </NavLink>
       </nav>

@@ -11,15 +11,13 @@ const Help = () => {
       <div className="ovrl">
         <div className="ovrl-sub">
           <h1 className="settings-header">Settings</h1>
-          
 
-          <div className="ovrl-sub-security-change-password-popup">
           <Menu />
+          <div className="ovrl-sub-security-change-password-popup">
             <h1 className="settings-header">Report an Issue</h1>
             <p>Encountering an issue with our app? We're here to help!</p>
-            <form >
+            <form>
               <div className="form-group">
-             
                 <input
                   type="password"
                   name="password"
@@ -28,18 +26,19 @@ const Help = () => {
                 />
               </div>
               <div className="form-group">
-              <textarea
-              className="form-control"
-              id="texp"
-              cols="14"
-              rows="4"
-              placeholder="You can tell us more about it"
-              name="message"
-            ></textarea>
+                <textarea
+                  className="form-control"
+                  id="texp"
+                  cols="14"
+                  rows="4"
+                  placeholder="You can tell us more about it"
+                  name="message"
+                ></textarea>
               </div>
 
-              <button className="btn btn-primary" id="olali">Submit</button>
-
+              <button className="btn btn-primary" id="olali">
+                Submit
+              </button>
             </form>
           </div>
         </div>

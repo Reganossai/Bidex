@@ -70,7 +70,7 @@ function App() {
           <Route exact path="/dashboard/settings/security/verify-account">
             <Verifyaccount/>
           </Route>
-          <Route exact path="/dashboard/settings/verify-bvn">
+          <Route exact path="/dashboard/settings/security/verify-bvn">
             <Verifybvn/>
           </Route>
           <Route path="/forgot-password">

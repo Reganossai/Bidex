@@ -29,11 +29,7 @@ const Sidebar = () => {
             <span> <FontAwesomeIcon icon={faCommentDots} className="fontawesome-sidebar"/></span>Messages
             </NavLink>
           </li>
-          <li id="prof" >
-            <NavLink  activeClassName="active" to="/dashboard/account">
-            <span> <FontAwesomeIcon icon={faUser} className="fontawesome-sidebar"/></span>My Account
-            </NavLink>
-          </li>
+          
           <li id="adm" >
             <NavLink  activeClassName="active" to="/dashboard/settings">
             <span> <FontAwesomeIcon icon={faGear} className="fontawesome-sidebar"/></span>Settings
