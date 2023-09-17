@@ -186,18 +186,7 @@ const Navbar = () => {
                   Messages
                 </NavLink>
               </li>
-              <li id="prof">
-                <NavLink activeClassName="active" to="/dashboard/account">
-                  <span>
-                    {" "}
-                    <FontAwesomeIcon
-                      icon={faUser}
-                      className="fontawesome-sidebar"
-                    />
-                  </span>
-                  My Account
-                </NavLink>
-              </li>
+             
               <li id="adm">
                 <NavLink activeClassName="active" to="/dashboard/settings">
                   <span>
@@ -210,15 +199,7 @@ const Navbar = () => {
                   Settings
                 </NavLink>
               </li>
-              <li id="lion">
-                <button>
-                  <FontAwesomeIcon
-                    icon={faRightFromBracket}
-                    className="fontawesome-sidebar"
-                  />
-                  Logout
-                </button>
-              </li>
+              
               {/* <li>
                   <button onClick={handleLogout} className="btn btn-danger">
                     Logout

@@ -8,7 +8,6 @@ import Forgotpassword from "./pages/Forgotpassword";
 import Home from "./pages/Home";
 import Seeds from "./pages/Seeds";
 import Messages from "./pages/Messages";
-import Account from "./pages/Account";
 import Settings from "./pages/Settings";
 import Editprofile from "./pages/Editprofile";
 import ManageBanks from "./pages/ManageBanks";
@@ -45,9 +44,6 @@ function App() {
           </Route>
           <Route exact path="/dashboard/messages">
             <Messages />
-          </Route>
-          <Route exact path="/dashboard/account">
-            <Account />
           </Route>
           <Route exact path="/dashboard/settings">
             <Settings />

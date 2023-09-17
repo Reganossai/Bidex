@@ -24,6 +24,8 @@ const Home = () => {
   const [isAddWallet, setIsAddWallet] = useState(false);
   const [isPayout, setIsPayout] = useState(false);
   const [isFund, setIsFund] = useState(false);
+  const [isBidexAccount, setIsBidexAccount] = useState(false);
+  const [isBankAccount, setIsBankAccount] = useState(false);
 
   const handleAddWalletClick = () => {
     setIsAddWallet(true);
@@ -37,10 +39,20 @@ const Home = () => {
     setIsPayout(true);
   };
 
+  const handleBidexAccountClick = () => {
+    setIsBidexAccount(true);
+  };
+
+  const handleBankAccountClick = () => {
+    setIsBankAccount(true);
+  };
+
   const handleClose = () => {
     setIsAddWallet(false);
     setIsPayout(false);
     setIsFund(false);
+    setIsBidexAccount(false);
+    setIsBankAccount(false);
   };
 
   return (
@@ -72,7 +84,7 @@ const Home = () => {
               </h1>
             </div>
             <div className="dash">
-              <h1 className="amount">#34,523,200,000</h1>
+              <h1 className="amount">$34,523,200</h1>
               <p className="updated">Updated 3 mins ago</p>
               <div className="pay-fun-mor">
                 <button onClick={handlePayoutClick}>
@@ -423,36 +435,39 @@ const Home = () => {
               <h3>Select the Payout method</h3>
             </div>
             <div className="wallet-country-options">
-              <div className="bank-options">
-                <div className="country-details">
-                  <div>
-                    <FontAwesomeIcon icon={faBank} className="city-guy" />
+              <button onClick={handleBankAccountClick}>
+                <div className="bank-options">
+                  <div className="country-details">
+                    <div>
+                      <FontAwesomeIcon icon={faBank} className="city-guy" />
+                    </div>
+                    <div className="country-bank-logo mx-2">
+                      <h2 className="country-name"> Withdraw to bank</h2>
+                    </div>
                   </div>
-                  <div className="country-bank-logo mx-2">
-                    <h2 className="country-name"> Withdraw to bank</h2>
+                  <div className="add-icon-btn cursor-pointer">
+                    <FontAwesomeIcon icon={faArrowRight} className="dnam" />
                   </div>
                 </div>
-                <div className="add-icon-btn cursor-pointer">
-                  <FontAwesomeIcon icon={faArrowRight} className="dnam" />
-                </div>
-              </div>
+              </button>
 
-              <div className="bank-options">
-                <div className="country-details">
-                  <div>
-                    <FontAwesomeIcon icon={faBank} className="city-guy"/>
+              <button onClick={handleBidexAccountClick}>
+                <div className="bank-options">
+                  <div className="country-details">
+                    <div>
+                      <FontAwesomeIcon icon={faBank} className="city-guy" />
+                    </div>
+                    <div className="country-bank-logo mx-2">
+                      <h2 className="country-name">
+                        Transfer to Bidex Other Account
+                      </h2>
+                    </div>
                   </div>
-                  <div className="country-bank-logo mx-2">
-                    <h2 className="country-name">
-                      {" "}
-                      Transfer to Bidex Other Account
-                    </h2>
+                  <div className="add-icon-btn cursor-pointer">
+                    <FontAwesomeIcon icon={faArrowRight} className="dnam" />
                   </div>
                 </div>
-                <div className="add-icon-btn cursor-pointer">
-                  <FontAwesomeIcon icon={faArrowRight} className="dnam" />
-                </div>
-              </div>
+              </button>
             </div>
           </div>
         ) : null}
@@ -508,7 +523,7 @@ const Home = () => {
             </div>
             <div className="header-wallet">
               <h1>Select Method</h1>
-              <h3>Select the Payout method</h3>
+              <h3>Select the wallet you want to fund with</h3>
             </div>
             <div className="wallet-country-options">
               <div className="bank-options">
@@ -524,6 +539,133 @@ const Home = () => {
                   <FontAwesomeIcon icon={faArrowRight} className="dnam" />
                 </div>
               </div>
+            </div>
+          </div>
+        ) : null}
+
+        {isBidexAccount ? (
+          <div className="bank-account">
+            <div id="xxx" className="cancel-icon cursor-pointer">
+              <button onClick={handleClose}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <g filter="url(#filter0_b_633_2349)">
+                    <rect width="30" height="30" rx="15" fill="#F1F5F9" />
+                    <path
+                      d="M9.27177 19.3446C8.91186 19.7045 8.90451 20.3435 9.27911 20.7181C9.66106 21.0927 10.3001 21.0854 10.6526 20.7328L15.0009 16.3845L19.3419 20.7255C19.7091 21.0927 20.3408 21.0927 20.7154 20.7181C21.09 20.3362 21.09 19.7119 20.7227 19.3446L16.3818 15.0037L20.7227 10.6554C21.09 10.2881 21.0973 9.65647 20.7154 9.28187C20.3408 8.90728 19.7091 8.90728 19.3419 9.27453L15.0009 13.6155L10.6526 9.27453C10.3001 8.91462 9.65371 8.89993 9.27911 9.28187C8.90451 9.65647 8.91186 10.3028 9.27177 10.6554L13.6127 15.0037L9.27177 19.3446Z"
+                      fill="#475569"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_b_633_2349"
+                      x="-54.3656"
+                      y="-54.3656"
+                      width="138.731"
+                      height="138.731"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feGaussianBlur
+                        in="BackgroundImageFix"
+                        stdDeviation="27.1828"
+                      />
+                      <feComposite
+                        in2="SourceAlpha"
+                        operator="in"
+                        result="effect1_backgroundBlur_633_2349"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_backgroundBlur_633_2349"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+            <div className="header-wallet">
+              <h1>Send to Bidex Account</h1>
+              <h3>Verify Your Account to Start Transactions</h3>
+            </div>
+            <div className="form-group-bidex">
+              <label for="fullname">Input Bidex Username</label>
+              <input type="text" name="fullname" className="form-control" />
+            </div>
+
+            <button id="withdraw-bidex" className="btn btn-primary">
+              Withdraw
+            </button>
+          </div>
+        ) : null}
+
+        {isBankAccount ? (
+          <div className="bank-account">
+            <div id="xxx" className="cancel-icon cursor-pointer">
+              <button onClick={handleClose}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <g filter="url(#filter0_b_633_2349)">
+                    <rect width="30" height="30" rx="15" fill="#F1F5F9" />
+                    <path
+                      d="M9.27177 19.3446C8.91186 19.7045 8.90451 20.3435 9.27911 20.7181C9.66106 21.0927 10.3001 21.0854 10.6526 20.7328L15.0009 16.3845L19.3419 20.7255C19.7091 21.0927 20.3408 21.0927 20.7154 20.7181C21.09 20.3362 21.09 19.7119 20.7227 19.3446L16.3818 15.0037L20.7227 10.6554C21.09 10.2881 21.0973 9.65647 20.7154 9.28187C20.3408 8.90728 19.7091 8.90728 19.3419 9.27453L15.0009 13.6155L10.6526 9.27453C10.3001 8.91462 9.65371 8.89993 9.27911 9.28187C8.90451 9.65647 8.91186 10.3028 9.27177 10.6554L13.6127 15.0037L9.27177 19.3446Z"
+                      fill="#475569"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_b_633_2349"
+                      x="-54.3656"
+                      y="-54.3656"
+                      width="138.731"
+                      height="138.731"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feGaussianBlur
+                        in="BackgroundImageFix"
+                        stdDeviation="27.1828"
+                      />
+                      <feComposite
+                        in2="SourceAlpha"
+                        operator="in"
+                        result="effect1_backgroundBlur_633_2349"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_backgroundBlur_633_2349"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+            <div className="header-wallet">
+              <h1>Select Bank Account</h1>
+              <h3>Select Bank Account</h3>
+            </div>
+            <div className="form-group-bidex">
+              <div className="form-group-bidex-sub">
+             <h6>01982928988</h6>
+             <h3>Johnson Daniel Agoro</h3>
+             <h5>Guarantee trust Bank</h5>
+             </div>
             </div>
           </div>
         ) : null}

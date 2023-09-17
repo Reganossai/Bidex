@@ -19,7 +19,7 @@ const Register = () => {
       
     <img src={back} className="imak" alt="imak"/>
   <div className="form-divv">
- 
+  <h1>Register</h1>
       <form>
       <div className="form-group">
           <label for="firstname">First name</label>

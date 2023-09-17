@@ -43,11 +43,13 @@ const PhotoUploader = () => {
               onClick={handleGoBack}
             />
           </button>
+          <div className="cam-position">
           <Camera
             onTakePhoto={(dataUri) => {
               handleTakePhoto(dataUri);
             }}
           />
+          </div>
         </div>
       ) : (
         <div className="take-upload-photo">

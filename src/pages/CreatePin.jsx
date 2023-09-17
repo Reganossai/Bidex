@@ -4,6 +4,7 @@ import React from "react";
 
 import ImageForm from "../components/ImageForm";
 import OTPInput from "../components/OTPInput";
+
 function CreatePin() {
   return (
     <div id="box-container" className='m-0 p-0 flex items-center  justify-between'>
@@ -15,8 +16,7 @@ function CreatePin() {
           <div className='mt-6'>
             <div className="headf">
               <h1 >
-                Create
-                <span
+                Create <span
                   className='pt-2'
                   style={{
                     width: "120px",
@@ -24,10 +24,8 @@ function CreatePin() {
                     height: "0px",
                     border: "0",
                     
-                  }}>
-                  Pin
-                </span>
-                Code
+                  }}> Pin
+                </span> Code
               </h1>
              <div className="mt-3">
              <svg

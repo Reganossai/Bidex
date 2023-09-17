@@ -17,7 +17,7 @@ const LandingPage = () => {
             and settings page
           </p>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
