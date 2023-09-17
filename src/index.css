@@ -64,6 +64,7 @@
   margin: 20px 0px 5px 15px;
 }
 
+
 .form-group label {
   font-weight: 500;
   padding: 10px 0px 10px 4px;
@@ -1861,7 +1862,18 @@
     margin: 20px 0px 5px 0px;
   }
 
+  .form-group-bidex {
+    margin: 20px 0px 5px 20px;
+  }
+
+
   .form-group label {
+    font-weight: 500;
+    padding: 10px 0px 10px 4px;
+  }
+
+  
+  .form-group-bidex label {
     font-weight: 500;
     padding: 10px 0px 10px 4px;
   }
@@ -1874,6 +1886,30 @@
     margin-top: 10px;
     cursor: pointer;
   }
+  
+  .form-group-bidex input {
+    padding: 10px 5px 10px 10px;
+    border-radius: 17px;
+    border: 1px solid lightblue;
+    width: 95%;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .form-group-bidex-sub{
+    background-color: #1F5EFA;
+    width: 95%;
+    padding: 10px 0px 10px 0px;
+    border-radius: 30px;
+  }
+
+  #withdraw-bidex{
+    padding: 10px 5px 10px 10px;
+    border-radius: 50px;
+    width: 90%;
+    margin: 80px 0px 0px 20px;
+  }
+  
 
   #bank {
     padding: 10px 5px 10px 10px;
