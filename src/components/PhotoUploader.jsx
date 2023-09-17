@@ -94,7 +94,7 @@ const dropzoneStyles = {
   padding: "20px",
   textAlign: "center",
   cursor: "pointer",
-  width: "500px",
+  width: "300px",
 };
 
 export default PhotoUploader;

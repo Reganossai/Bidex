@@ -1231,7 +1231,7 @@
 #olali {
   width: 340px;
   border-radius: 20px;
-  margin: 20px 0px 0px 18px;
+  margin: 80px 0px 0px 18px;
 }
 
 .ovrl-sub-security-change-password-popup h1 {
@@ -2628,7 +2628,24 @@
     margin: 0px 0px 30px 10px;
   }
 
+  .settings-menuu {
+    display: flex;
+    border-radius: 20px;
+    color: black;
+    width: 95%;
+    height: 49px;
+    padding: 5px 10px 0px 10px;
+    margin: 0px 0px 30px 10px;
+  }
+
+
   .settings-menu a {
+    font-size: 10px;
+    width: 80px;
+  }
+
+  
+  .settings-menuu a {
     font-size: 10px;
     width: 80px;
   }
@@ -2686,7 +2703,7 @@
   #olali {
     width: 340px;
     border-radius: 20px;
-    margin: 20px 0px 0px 18px;
+    margin: 400px 0px 0px 18px;
   }
 
   .ovrl-sub-security-change-password-popup h1 {
@@ -3203,7 +3220,7 @@
 .take-upload-photo {
   display: flex;
   flex-direction: column;
-  margin-top: 190px;
+  margin-top: 140px;
   margin-left: 150px;
   width: 300px;
 }
